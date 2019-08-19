@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="source/css/min-css/style-min.css">
+	<title>Записаться</title>
+</head>
+<body>
+	<header class="page-header">
+		<a class="page-header__logo" href="">
+			<picture>
+				<source media="(min-width: 960px)" srcset="images\logotype-desktop.svg">
+<source media="(min-width: 768px)" srcset="images\logotype-tablet.svg">
+			<img class="page-header__logo-image" src="images/logotype-mobile.svg" alt="Логотип Барбершоп Бородинский">
+		</picture>
+		</a>
+
+		<nav class="main-nav main-nav--closed main-nav--nojs">
+			<button type="button" class="main-nav__toggle">
+				<span class="visually-hidden">
+
+					Открыт меню
+				</span> </button>
+			<div class="main-nav__wrapper">
+				<ul class="main-nav__list site-list">
+
+					<li class="site-list__item  ">
+						<a href="">
+							Главная
+						</a>
+					</li>
+
+					<li class="site-list__item">
+						<a href="catalog.html">
+							Наши работы
+						</a>
+					</li>
+
+
+					<li class="site-list__item site-list__item--active">
+						<a href="form.html">
+							Записаться
+						</a>
+					</li>
+
+
+					<li class="site-list__item">
+						<a href="">
+							Контакты
+						</a>
+					</li>
+
+
+					<li class="site-list__item">
+						<a href="">
+							Kangurtboy
+						</a>
+					</li>
+
+				</ul>
+
+				<ul class="main-nav__list   user-list">
+
+					<li class="user-list__item">
+						<a class="user-list__link" href="">
+							<svg class="user-list__login-icon" height="18" viewBox="0 0 512 512" width="18"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="m375.023438 276h-355.023438c-11.046875 0-20-8.953125-20-20s8.953125-20 20-20h355.023438l-72.09375-85.070312c-7.140626-8.425782-6.097657-21.046876 2.328124-28.1875 8.425782-7.140626 21.046876-6.097657 28.1875 2.328124l100 118c6.304688 7.433594 6.292969 18.441407 0 25.859376l-100 118c-7.113281 8.394531-19.730468 9.496093-28.1875 2.328124-8.425781-7.140624-9.46875-19.761718-2.328124-28.1875zm116.976562-276h-173.8125c-11.042969 0-20 8.953125-20 20s8.957031 20 20 20h153.8125v432h-153.8125c-11.042969 0-20 8.953125-20 20s8.957031 20 20 20h173.8125c11.046875 0 20-8.953125 20-20v-472c0-11.046875-8.953125-20-20-20zm0 0" />
+							</svg>
+							Войти
+
+						</a>
+					</li>
+
+				</ul>
+			</div>
+		</nav>
+
+	</header>
+
+			<main class="page-form">
+					<div class="page-works__title__wrapper">
+
+							<h1 class="page-works__title title">
+									Запись на стрижку
+							</h1> <a href="index.html" class="return-button button">
+								На главную</a>
+							</div>
+			
+				<form action="" method="get" class="Page-form__form form">
+<ul class="form__name-list">
+	<li class="form__item"><input type="text" placeholder="Фамилия" name="surname"></li>
+	<li class="form__item"><input type="text" placeholder="Имя" name="name"></li>
+	<li class="form__item"><input type="text" placeholder="Отчество" name="fatherland"></li>
+</ul>
+<ul class="form__contacts-list">
+	<li class="form__item"><input type="text" name="phone-number" placeholder="Контактный телефон"></li>
+	<li class="form__item"><input type="text" name="e-mail" placeholder="Контактный e-mail"></li>
+</ul>
+<div class="form__textarea">
+<textarea name="addtional-information" class="form__item form__textarea" id="" cols="" rows="7" placeholder="Доп. информация для мастера"></textarea>
+</div>
+
+<div class="beard-wrapper">
+<legend class="form__list-title">
+		Выберите модель бороды:
+</legend>
+<ul class="form__beard-list">
+	<li class="form__item beard__item"><input id="admiral" type="radio" name="type-beard">
+		<label for="admiral">адмирал  </label><img src="images/beard-1.png" alt="" width="52" height="49">
+		</li>
+	<li class="form__item beard__item"><input id="lumberer" type="radio" name="type-beard"> <label for="lumberer">лесоруб </label>
+		<img src="images/beard-2.png" alt="" width="58" height="68"></li>
+	<li class="form__item beard__item"><input type="radio" name="type-beard" id="polar"> <label for="polar">полярник   </label> <img src="images/beard-3.png" alt="" width="64" height="78">  </li>
+	<li class="form__item beard__item"><input type="radio" name="type-beard" id="boyar">  <label for="boyar">боярин     </label><img src="images/beard-4.png" alt="" width="58" height="98"> </li>
+	<li class="form__item beard__item"><input type="radio" name="type-beard" id="sage">  <label for="sage">мудрец      </label> <img src="images/beard-5.png" alt="" width="46" height="105"> 
+	</li>
+</ul>
+</div>
+
+<legend class="form__list-title">
+		Дополнительные услуги:
+</legend>
+<ul class="form__addtional-list">
+	<li class="form__item addtional__item"><input type="checkbox" name="typing-beard" id="typing-beard" checked><label for="typing-beard"> Подкрасить бороду </label></li>
+	<li class="form__item addtional__item"><input type="checkbox" name="screw-mustache" id="screw-mustache" checked><label for="screw-mustache">  Накрутить усы </label></li>
+	<li class="form__item addtional__item"><input type="checkbox" name="brown-beard" id="brown-beard"><label for="brown-beard"> Причесать бороду  </label></li>
+	<li class="form__item addtional__item"><input type="checkbox" name="unscrew-whiskey" id="unscrew-whiskey"><label for="unscrew-whiskey">  Подровнять виски </label></li>
+	<li class="form__item addtional__item"><input type="checkbox" name="remove-seat" id="remove-seat"><label for="remove-seat">  Убрать седину </label></li>
+	<li class="form__item addtional__item"><input type="checkbox" name="polish-bald" id="polish-bald"><label for="polish-bald">  Отполировать лысину </label></li>
+</ul>
+<button type="submit" class="form__submit button">Отправить заявку</button>
+				</form>
+			</main>
+
+
+
+			
+	<footer class="page-footer">
+		<div class="page-foote__wrapper">
+			<div class="page-footer__contacts contacts">
+				<b class="contacts__title">
+					Барбершоп Бородинский
+				</b>
+				<p class="contacts__text">
+					г. Санкт-Петербург, ул. Большая Конюшенная 19/8
+				</p>
+				<a href="tel: +78125556666" class="contacts__phone button">
+					<span class="contacts__phone-mobile">
+						+7 (812) 555-66-66
+					</span>
+				</a>
+			</div>
+
+			<div class="page-footer__social social">
+				<b class="social__title">Давайте дружить!</b>
+				<ul class="social__list">
+					<li class="social__item">
+						<a href="" class="social__link social__link--vk">
+							<img src="images/vk-icon-big.png" alt="">
+							<span class="visually-hidden">Мы в Вконтакте
+							</span> </a>
+					</li>
+					<li class="social__item">
+						<a href="" class="social__link social__link--fb">
+							<img src="images/facebook-icon-big.png" alt="">
+								<span class="visually-hidden"> Мы в Фейсбуке </span>
+							</a>
+					</li>
+					<li class="social__item">
+						<a href="" class="social__link social__link--ins">
+							<img src="images/insta-icon-big.png" alt="">
+								<span class="visually-hidden"> Мы в Инстаграме </span> </a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="page-footer__copyright copytight">
+				<b class="copytight__text">
+					Разработано:
+				</b>
+				<a class="button copytight__link" href="">Kangurtboy</a>
+			</div>
+		</div>
+	</footer>
+
+			
+			
+			
+				<section class="modal modal-login">
+						<h2 class="modal__title">
+							ЛИЧНЫЙ КАБИНЕТ
+						</h2>
+						<p class="modal__description">
+							Введите свой логин и пароль, чтобы войти
+						</p>
+						<form	 action="" method="POST" class="modal__form">
+							<div class="modal__input-wrapper">
+							<input type="text" name="login" id="login" placeholder="Логин">
+							
+							<input type="password" name="password" id="password" placeholder="Пароль">
+						</div>
+						
+							<input type="checkbox" id="forget"> <label for="forget"> Запомните меня </label> 
+							<a href="" class="modal__forget">Я забыл пароль!</a>
+						<div class="modal__button-wrapper">
+							<button type="submit" class="modal__button button">Войти</button>
+						<button class="modal__close button">Закрыт</button>
+						
+						</div>
+						</form>
+						</section>
+						<script src="source/script/main.js"></script>
+	
+</body>
+</html>
