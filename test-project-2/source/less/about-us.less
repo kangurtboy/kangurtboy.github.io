@@ -1,0 +1,61 @@
+.about-us {
+	&__title {
+		font-size: 25px;
+		margin-bottom: 30px;
+	}
+
+	&__list {
+		.list-reset();
+	}
+
+	&__item {
+		font-size: 17px;
+		margin-bottom: 40px;
+		font-weight: bold;
+
+		img {
+			display: block;
+			margin-bottom: 25px;
+		}
+	}
+}
+
+@media(min-width:@tablet-width) {
+	.about-us {
+	
+
+		&__list {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+
+		&__item {
+			width: 48%
+		}
+	margin-bottom: 90px;
+	}
+	.about-us__title {
+		font-size: 43px;
+		margin-bottom: 50px;
+	}
+}
+
+@media(min-width:@desktop-width) {
+	.about-us {
+		margin: 0 auto;
+		padding-left: 175px;
+
+		&__title {
+			font-size: 53px;
+		}
+
+		&__list {
+			margin: 0 auto;
+		}
+
+		&__item {
+			width: 50%;
+		}
+	}
+}

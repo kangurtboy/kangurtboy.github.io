@@ -1,0 +1,171 @@
+.price-current {
+	padding: 20px;
+	background-color: #353535;
+	color: #ffffff;
+
+	&__title {
+		.font-large();
+		padding-top: 35px;
+		margin-bottom: 30px;
+	}
+	&__watch{
+		width: 58px;
+		height: 57px;
+	}
+
+	&__stock {
+		display: flex;
+		border: 1px solid #484848;
+		margin: 0;
+		padding: 14px;
+	}
+
+	&__time {
+		margin: 0;
+		margin-top: 5px;
+		margin-left: 35px;
+	}
+
+	.table-addtional {
+		display: block;
+	}
+
+}
+
+
+
+.price-table {
+	width: 100%;
+	color: #fff;
+	border: none;
+	margin: 0;
+	padding: 0;
+	border-spacing: 0;
+	margin-bottom: 35px;
+
+	.field {
+		.font-large();
+		font-size: 20px;
+		text-transform: capitalize;
+		display: block;
+		text-align: left;
+		margin-top: 25px;
+
+		small {
+			margin-bottom: 20px;
+		}
+	}
+
+	.value {
+		font-stretch: condensed;
+	}
+
+	.table-number {
+		display: none;
+	}
+
+}
+
+@media (min-width: @tablet-width) {
+	.price-current{
+		margin: 0 auto;
+		width: 100%;
+	}
+	.price-table {
+		border-collapse: collapse;
+
+		tr {
+
+			display: table-row;
+
+		}
+		.table-addtional{
+			display: table-cell;
+		}
+
+		td {
+			.border();
+			padding: 13px 20px;
+		}
+
+		.table-number {
+			padding: 13px 30px;
+			display: table-cell;
+		}
+
+		.table-hidden {
+			display: none;
+		}
+		.field{
+			display: table-cell;
+			padding-left: 20px;
+
+		}
+		
+		
+	}
+	.price-current__watch{
+		width: 72px;
+		height: 71px;
+	}
+	.price-current__time{
+font-size: 30px;
+font-weight: bold;
+text-transform: uppercase;
+margin-top: 12px;
+
+	}
+	.price-current__stock{
+justify-content: space-between;
+	}
+}
+
+@media (min-width: @desktop-width){
+	.price-current{
+		width: 100%;
+		margin: 0 auto;
+		padding-bottom: 85px;
+		&__title{
+			width: 960px;
+			margin: 0 auto;
+			margin-bottom: 55px;
+			text-align: left;
+		}
+	}
+	
+	.price-current__stock{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 270px;
+		height:auto;
+
+	}
+	.price-current__watch{
+		width: 142px;
+		height: 139px;
+		margin: 0;
+		padding: 0;
+	}
+	.price-current__time{
+		width: 125px;
+		font-size: 20px;
+		line-height: 20px;
+		font-weight: lighter;
+		text-transform: initial;
+		padding: 0;
+		margin: 0;
+		text-align: center;
+	}
+	.price-current__column{
+		width: 960px;
+		display: flex;
+		justify-content: space-between;
+		margin: 0 auto;
+	}
+	.price-table{
+		width: 640px;
+		margin: 0 auto;
+		margin-right: 60px;
+	}
+}

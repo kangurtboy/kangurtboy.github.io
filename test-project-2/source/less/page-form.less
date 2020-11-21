@@ -1,0 +1,43 @@
+.page-form{
+	&__title{
+		font-size: 27px;
+padding: 63px 43px;
+text-align: center;
+margin-top: -1px;
+background-color: #f1f1f1;
+	}
+}
+
+.form{
+	margin: 0 10px;
+	&__description{
+		font-size: 13px;
+		line-height: 24px;
+		margin-bottom: 30px;
+	}
+}
+
+
+@media(min-width: @tablet-width){
+	.page-form{
+		&__title{
+			font-size: 43px;
+padding: 100px 150px;
+		}
+	}
+	.form{
+		&__description{
+			font-size: 17px;
+			margin-top: 90px;
+		}
+	}
+}
+
+@media(min-width: @desktop-width){
+.page-form{
+	&__title{
+		font-size: 53px;
+	}
+}
+}
+

@@ -1,0 +1,174 @@
+.product-week {
+	&__name {
+		font-size: 25px;
+		z-index: 2;
+
+
+	}
+
+	&__title {
+		font-size: 17px;
+		line-height: 20px;
+		color: #63d1bb;
+		font-weight: 600;
+	}
+
+	&__description {
+		color: @main-color;
+		margin-bottom: 40px;
+		font-size: 15px;
+	}
+	&__image{
+		display: block;
+		height: 315px;
+		width: 260px;
+	
+	}
+	&__price{
+		font-size: 17px;
+		font-weight: bold;
+		color: #444444;
+	}
+	&__order{
+		font-weight: bold;
+		display: inline-block;
+		text-align: center;
+		margin: 0 auto;
+	
+	}
+
+	.product-table {
+		width: 100%;
+		border-collapse: collapse;
+		margin-bottom: 30px;
+		font-size: 15px;
+
+		td {
+			border-top: none;
+			border-right: none;
+			border-left: none;
+			color: @main-color;
+			padding: 5px 0;
+		}
+		tr{
+			border-bottom:  @main-border;
+		}
+	}
+
+	&__price {
+		color: @main-color;
+		font-size: 17px;
+		text-align: center;
+	}
+
+	.button {
+		font-size: 17px;
+	}
+
+	margin-bottom: 130px;
+}
+
+@media(min-width: @tablet-width) {
+	.product-week {
+		width: 1150px;
+		&__name {
+			font-size: 43px;
+		}
+
+		&__wrapper {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+		&__image{
+			width: 333px;
+			height: 404px;
+		}
+
+		&__title {
+			margin-right: 60px;
+			padding-top: 25px;
+			width: 90px;
+			text-align: center;
+		}
+
+		&__description {
+			width: 285px;
+		}
+
+		.product-column {
+			display: flex;
+			justify-content: space-between;	
+		}
+		.product-table{
+			width: 47%;
+			td{
+				border: none;
+			}
+		}
+		&__picture{
+			width: 47%;
+			margin-top: -110px;
+
+		}
+		&__price{
+			text-align: left;
+			margin-top: -52px;
+		}
+		&__order{
+			width: 290px;
+
+		}
+	}
+}
+
+@media(min-width: @desktop-width) {
+	.product-week {
+		padding-left: 175px;
+		margin-bottom: 60px;
+		
+		&__wrapper {
+			flex-direction: row-reverse;
+			justify-content: flex-end;
+			z-index: 2;
+		}
+
+		&__name {
+			font-size: 53px;
+			margin-left: 60px;
+			padding-left: 40px;
+		}
+		&__title{
+			margin-left: -120px;
+		}
+		&__picture{
+			margin-top: -210px;
+			z-index: 1;
+			height: 636px;
+
+		}
+		&__image{
+			width: 525px;
+			height: 636px;
+
+		}
+		&__description{
+			margin-left: 60px;
+		}
+		&__table{
+			margin-left: 60px;
+
+		}
+		&__price{
+			margin-top: -110px;
+			margin-left: 60px;
+		}
+		&__order{
+			margin-left: 60px;
+
+		}
+		
+
+
+	}
+}

@@ -1,0 +1,52 @@
+.page-header {
+	background-color: #242424;
+	display: flex;
+	flex-direction: column;
+
+	&__logo {
+		text-align: center;
+	}
+
+	&__logo-image {
+		height: 85px;
+		width: 226px;
+	}
+}
+
+@media (min-width: @tablet-width) {
+	.page-header {
+		background: #000;
+		background-image: url("/images/main-bg-tablet.jpg");
+		background-repeat: no-repeat;
+		background-position: center -9px;
+
+		&__logo {
+			height: 400px;
+			width: 100%;
+			order: 2;
+
+			img {
+				width: 370px;
+				height: auto;
+				margin: 0 auto;
+				margin-top: 40px;
+			}
+		}
+	}
+
+}
+
+@media (min-width: @desktop-width) {
+	.page-header {
+		width: 100%;
+		background-position: center 0;
+		background-size: cover;
+
+		&__logo {
+			height: 648px;
+			img{
+				margin-top: 57px;
+			}
+		}
+	}
+}
