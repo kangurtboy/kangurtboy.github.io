@@ -1,0 +1,61 @@
+.modal {
+	display: none;
+	margin: 0 auto;
+	position: fixed;
+	top: 20%;
+	left: 35%;
+	width: auto;
+	background-color: #f8f5f2;
+	padding: 40px 20px;
+	width: 360px;
+
+	&__title {
+		.font-large();
+	}
+
+	&__description {
+		margin-bottom: 30px;
+		text-align: center;
+	}
+
+	input[type="text"],
+	input[type="password"] {
+		display: block;
+		width: auto;
+		font-size: 18px;
+		line-height: 30px;
+		padding: 10px 40px 10px 20px;
+		color: #000000;
+		border: 1px solid #e5ddd5;
+		margin-bottom: 10px;
+	}
+	&__forget{
+		color: #000000;
+		margin-left: 20px;
+		display: inline-block;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	&__button{
+		border: none;
+		background-color: #826550;
+		color: #ffffff;
+		display: block;
+		margin-right: 20px;
+		font: inherit;
+		font-weight: bold;
+	}
+	&__close{
+		.border();
+	background-color: inherit;
+	font: inherit;
+		font-weight: bold;
+	}
+	&__button-wrapper{
+		display: flex;
+	}
+	&__input-wrapper{
+		display: flex;
+		flex-direction: column;
+	}
+}

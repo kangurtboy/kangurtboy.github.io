@@ -1,0 +1,147 @@
+.catalog-video {
+	position: relative;
+	&::before{
+		content: "" ;
+		display: inline-block;
+		position: absolute;
+		width: 101px;
+		height: 77px;
+		cursor: pointer;
+		background-image: url(../../../images/svg/play.svg);
+		left: 80px;
+		top: 145px;
+	}
+	width: 262px;
+	margin: 0 auto;
+	margin-bottom: 60px;
+	border: 1px solid #ececec;
+	&__movie{
+		width: 100%;
+		
+	}
+
+	&__title {
+		margin: 0;
+		padding: 0;
+		margin-top: 30px;
+		margin-left: 35px;
+		margin-bottom: 27px;
+		position: relative;
+		padding-left: 45px;
+
+		&::before {
+			content: "";
+			display: block;
+			position: absolute;
+			width: 43px;
+			height: 30px;
+			left: 0;
+			background-image: url(../../../images/svg/video-icon.png);
+			background-repeat: no-repeat;
+
+		}
+	}
+
+	&__description {
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	&__button {
+		display: block;
+		text-align: center;
+		padding: 17px 20px;
+		margin-bottom: 35px;
+		margin-right: 35px;
+		margin-left: 35px;
+		border: 2px solid #444444;
+		font-size: 17px;
+		text-transform: uppercase;
+		font-weight: bold;
+
+
+
+	}
+}
+
+@media(min-width: @tablet-width) {
+	.catalog-video {
+		display: flex;
+		flex-direction: column;
+		width: 668px;
+		&::before{
+			top: 184px;
+			left: 286px;
+		}
+
+		&__button {
+			display: block;
+			text-align: center;
+		}
+		&__wrapper{
+			order: 2;
+		}
+
+		&__title {
+			font-size: 20px;
+			order: 1;
+		}
+		&__description{
+			text-align: left;
+			margin-left: 35px;
+		}
+	}
+}
+
+@media(min-width: @desktop-width) {
+	.catalog-video {
+		width: 1050px;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		padding: 0;
+
+		&__title {
+			font-size: 20px;
+			width: 150px;
+			text-align: left;
+			margin-left: 60px;
+			padding-top: 50px;
+
+			&::before {
+				top: 0;
+				left: 45px;
+
+			}
+		}
+		&__button{
+		margin: 0;
+		margin-left: 35px;
+		width: 230px;
+		}
+		&__wrapper{
+
+		}
+
+		&__description {
+			width: 290px;
+			margin-bottom: 50px;
+			margin-top: -60px;
+
+			font-size: 15px;
+		}
+
+		&__movie {
+			background: #000;
+			order: -1;
+			width: 680px;
+			height: 100%;
+			margin: 0;
+		}
+
+		&__wrapper {
+			margin-left: auto;
+			margin-top: -220px;
+		}
+	}
+}

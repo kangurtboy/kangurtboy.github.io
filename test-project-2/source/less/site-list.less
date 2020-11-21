@@ -1,0 +1,50 @@
+.site-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+line-height: 0;
+	&__item {
+		border-top: @main-border;		
+		text-align: left;
+		display: block;
+		padding: 35px 0 35px 75px;
+		&:hover{
+			opacity: 0.5;
+		}
+	}
+}
+
+@media (min-width: @tablet-width) {
+	.site-list {
+		display: flex;
+		flex-wrap: wrap;
+		padding: 0;
+		margin-left: 50px;
+		margin-bottom: -60px;
+		order: 1;
+
+
+		&__item {
+			padding-top: 25px;
+			padding-right: 35px;
+			padding-left: 0;
+			border: none;
+
+			a {
+				padding: 0;
+				margin: 0;
+			}
+		}
+
+	}
+}
+
+@media (min-width: @desktop-width) {
+	.site-list {
+		margin: 0;
+		order: -1;
+		font-size: 17px;
+		padding-top: 12px;
+		padding-bottom: 16px;
+	}
+}

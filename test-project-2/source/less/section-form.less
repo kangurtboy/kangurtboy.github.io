@@ -1,0 +1,421 @@
+.input-list {
+	.list-reset();
+
+	&__item {
+		margin-bottom: 30px;
+		font-size: 17px;
+		font-weight: bold;
+
+
+		input[type="text"] {
+			border: none;
+			border-bottom: 2px solid #000000;
+			padding: 16px 0;
+			padding-right: 70px;
+			display: block;
+			width: 100%;
+
+			&::placeholder {
+				font-size: 17px;
+			}
+		}
+
+		input[type="email"] {
+			border: none;
+			border-bottom: 2px solid #000000;
+			padding: 16px 0;
+			padding-right: 70px;
+			display: block;
+			width: 100%;
+
+			&::placeholder {
+				font-size: 17px;
+			}
+		}
+
+		input[type="tel"] {
+			border: none;
+			border-bottom: 2px solid #000000;
+			padding: 16px 0;
+			padding-right: 70px;
+			display: block;
+			width: 100%;
+
+			&::placeholder {
+				font-size: 17px;
+			}
+		}
+
+	}
+
+	textarea {
+		border: 2px solid #000000;
+		line-height: 20px;
+		padding: 20px;
+		width: 100%;
+
+		&::placeholder {
+			font-size: 17px;
+		}
+	}
+}
+
+.form__submit-button {
+	padding: 20px 45px;
+	font-size: 17px;
+	color: #444444;
+	font-weight: bold;
+	border: 2px solid #444444;
+	margin-top: 30px;
+	margin-bottom: 55px;
+	display: block;
+
+}
+
+
+
+
+
+.form {
+	legend {
+		color: #63d1bb;
+		text-transform: uppercase;
+		font-weight: bold;
+		position: relative;
+		margin-bottom: 30px;
+
+		&::after {
+			content: "";
+			position: absolute;
+			height: 2px;
+			background-color: #63d1bb;
+			width: 75%;
+			left: 63px;
+			top: 50%;
+		}
+	}
+
+	fieldset {
+		border: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	&__radio-list {
+		.list-reset();
+	}
+
+	&__checkbox-list {
+		.list-reset();
+	}
+
+	&__checkbox-item {
+		font-size: 17px;
+		font-weight: bold;
+		margin: 30px 0;
+		cursor: pointer;
+
+		input[type="checkbox"] {
+			display: none;
+		}
+
+		label::before {
+			content: "";
+			display: inline-block;
+			position: relative;
+			width: 40px;
+			height: 40px;
+			margin-left: 40px;
+			border: 2px solid #444444;
+			vertical-align: middle;
+			left: -40px;
+		}
+
+		input[type="checkbox"]:checked+label::before {
+			content: "";
+			display: inline-block;
+			position: relative;
+			width: 40px;
+			height: 40px;
+			margin-left: 40px;
+			vertical-align: middle;
+			background-image: url(../../../images/svg/checked.svg);
+			background-size: 70%;
+			background-position: center center;
+			background-repeat: no-repeat;
+			left: -40px;
+		}
+	}
+
+	&__radio-item {
+		font-size: 17px;
+		font-weight: bold;
+		margin: 30px 0;
+		cursor: pointer;
+
+		input[type="radio"] {
+			display: none;
+		}
+
+		label::before {
+			content: "";
+			display: inline-block;
+			position: relative;
+			width: 40px;
+			height: 40px;
+			margin-left: 40px;
+			border-radius: 50%;
+			border: 2px solid #444444;
+			vertical-align: middle;
+			left: -40px;
+		}
+
+		input[type="radio"]:checked+label::before {
+			content: "";
+			display: inline-block;
+			position: relative;
+
+			margin-left: 40px;
+			vertical-align: middle;
+			background-image: url(../../../images/svg/Shape.png);
+			background-size: 50%;
+			background-position: center center;
+			background-repeat: no-repeat;
+		}
+
+	}
+
+	&__name-phone-number {
+		top: 25px;
+	}
+
+	&__name-email {
+		top: 25px;
+
+	}
+}
+
+.input-phone{
+position: relative;
+	&::after{
+content: "" ;
+display: inline-block;
+position: absolute;
+width: 25px;
+height: 24px;
+background-image: url(../../../images/svg/phone.svg.png);
+background-repeat: no-repeat;
+background-size: 100%;
+top: 5px;
+right: 0;
+	}
+}
+
+.input-email{
+	position: relative;
+		&::after{
+	content: "" ;
+	display: inline-block;
+	position: absolute;
+	width: 32px;
+	height: 21px;
+	background-image: url(../../../images/svg/mail.svg.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	top: 5px;
+	right: 0;
+		}
+	}
+
+
+
+@media(min-width:@tablet-width) {
+	.form {
+
+		&__wrapper {
+			display: flex;
+			background-color: #f4f4f4;
+			padding: 50px;
+		}
+
+		&__wrapper__type {
+			background-color: #fff;
+		}
+
+		&__wrapper__name {
+			background-color: #fff;
+		}
+
+		&__wrapper__other {
+			background-color: #fff;
+		}
+
+		&__wrapper__number {
+			background-color: #f1f1f1;
+			padding: 0;
+		}
+
+		&__wrapper__phone {
+			background-color: #f1f1f1;
+			padding: 50px;
+		}
+
+		&__warnin-text {
+			margin-top: 50px;
+		}
+
+		&__name-type {
+			margin-right: auto;
+		}
+
+		&__radio-list {
+			display: flex;
+			flex-direction: column;
+			margin-left: -30px;
+			margin-right: auto;
+		}
+
+		&__radio-item {
+
+			margin-bottom: 20px;
+		}
+
+		&__checkbox-list {
+			display: flex;
+			flex-wrap: wrap;
+			margin-right: auto;
+			background-color: #f1f1f1;
+		}
+
+		&__name-colors {
+			width: 50%;
+		}
+
+		&__checkbox-item {
+			width: 50%
+		}
+
+		.input-list {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+
+		}
+
+		&__item {
+			width: 100%;
+
+		}
+
+		&__name-surname {
+			width: 50%;
+		}
+
+		&__name-phone-number {
+			width: 50%;
+		}
+
+		&__name-email {
+			width: 50%;
+		}
+
+		&__name-other {
+			width: 50%;
+		}
+
+		.other-list {
+			margin-top: 50px;
+			width: 100%;
+
+			textarea {
+				width: 100%;
+			}
+		}
+
+		.warning-text-wrapper {
+			display: flex;
+			justify-content: space-between;
+			flex-direction: row-reverse;
+		}
+
+		legend {
+			&::after {
+				display: none;
+			}
+		}
+	}
+
+	input[type="tel"] {
+		background-color: #f1f1f1;
+	}
+
+	input[type="email"] {
+		background-color: #f1f1f1;
+	}
+
+}
+
+@media(min-width:@desktop-width) {
+	.form {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	
+		&__description {
+			margin-left: 215px;
+			margin-bottom: 70px;
+			line-height: 30px;
+
+		}
+
+		&__name-type {
+			margin: 0;
+			width: 175px;
+		}
+
+		&__name-colors {
+			width: 175px;
+		}
+
+		&__checkbox-item {
+			width: 33%;
+		}
+
+		&__name-surname {
+			width: 175px;
+		}
+
+		&__name-phone-number {
+			width: 175px;
+		}
+
+		&__name-email {
+			width: 175px;
+		}
+
+		&__name-other {
+			width: 175px;
+		}
+
+		&__submit-button {
+			margin-left: 248px;
+		}
+		&__wrapper{
+			padding-left: 105px;
+			width: 100%;
+		}
+		&__warnin-text{
+			margin-right: 45px;
+		}
+	}
+
+	.input-list__item {
+		display: flex;
+		flex-wrap: nowrap;
+
+		label {
+			margin-right: 30px;
+			padding-top: 12px;
+		}
+	}
+}

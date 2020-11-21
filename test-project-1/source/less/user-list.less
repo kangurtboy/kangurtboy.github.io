@@ -1,0 +1,111 @@
+.user-list {
+	background-color: #6a4d38;
+	position: relative;
+
+	&__link {
+		color: #fff;
+		text-transform: capitalize;
+		border: none;
+		font-weight: normal;
+		font-stretch: ultra-condensed;
+		padding: 13px 50px;
+		text-decoration: none;
+		display: block;
+
+	}
+
+	&__login-icon {
+		position: absolute;
+		top: 17px;
+		left: 21px;
+		opacity: 0.3;
+
+		path {
+			fill: #fff;
+			opacity: 0.5;
+			
+		}
+		path:hover{
+			fill: #000;
+		opacity: 1;
+		}
+		
+	}
+}
+
+@media(min-width:@tablet-width) {
+	.user-list {
+		width: 60px;
+		background: #000;
+
+		&__link {
+			width: 60px;
+			height: 70px;
+			padding: 0;
+			font-size: 0;
+		}
+
+		&__login-icon {
+			opacity: 1;
+			top: 29px;
+			left: 12px;
+
+			path {
+				fill: #fff;
+			}
+		}
+	}
+
+}
+
+@media(min-width:@desktop-width) {
+	.user-list {
+		width: 160px;
+
+		&__link {
+		width: 160px;
+			position: relative;
+			padding-top: 25px;
+			padding-right: 30px;
+			padding-bottom: 23px;
+			padding-left: 50px;
+			font-size: 18px;
+			font-weight: bold;
+			text-transform: uppercase;
+			text-decoration: none;
+
+			&:hover {
+				color: #000;
+				background-color: #fff;
+
+				&:active {
+					color: rgba(0, 0, 0, 0.3);
+
+					path {
+						fill: #000;
+					}
+
+
+				}
+			}
+
+		}
+
+	}
+
+	.user-list__login-icon {
+		left: 15px;
+		opacity: 1;
+		top: 29px;
+		left: 12px;
+
+		path {
+			fill: #fff;
+		}
+
+		&:active .user-list__login-icon {
+			opacity: 0.1;
+
+		}
+	}
+}

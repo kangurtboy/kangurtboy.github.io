@@ -1,0 +1,88 @@
+/* ----------------------------------------------------- Глобалные стили ---------------------------------------------------------- */
+@font-face{
+	font-family: 'PTSansNarrow' ;
+	src: url('../../fonts/ptsansnarrow.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face{
+	font-family: 'PTSansNarrow' ;
+	src: url('../../fonts/ptsansnarrowbold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+
+body {
+	font-family:  PTSansNarrow , sans-serif;
+	font-size: 18px;
+	margin: 0;
+}
+
+
+
+
+.visually-hidden{
+	position: absolute;
+
+    width:1px; 
+    height: 1px;
+    margin:-1px;
+    border:0;
+    padding:0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0 );
+    overflow: hidden;
+}
+
+img{
+	width: 100%;
+	height: auto;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+
+
+
+
+/* ------------------------------------------------------- миксинны -------------------------------------------------------------- */
+.list-reset(){
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.button(){
+display: inline-block;
+padding: 13px 50px;
+font-size: 18px;
+text-transform: uppercase;
+border: 1px solid #3e3e3e;
+text-decoration: none;
+}
+
+.font-large(){
+font-size: 30px;
+text-align: center;
+text-transform: uppercase;
+font-style: normal;
+margin: 0;
+padding: 0;
+}
+
+.border(){
+	border: 1px solid #4a4a4a;
+}
+
+/* ------------------------------------------------------- Переменые -------------------------------------------------------------- */
+@bg-darkgrey: #292929;
+@bg-lightgrey:#f8f5f2;
+@tablet-width:768px;
+@desktop-width:1200px;
+@mobile-width-only:767px;
+@retina-dpi: 144dpi;
+@retina-dppx: 1.5dppx;

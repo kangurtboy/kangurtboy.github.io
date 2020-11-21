@@ -1,0 +1,197 @@
+.main-nav {
+	font-size: 17px;
+	line-height: 17px;
+	font-weight: bold;
+	position: relative;
+	width: 100%;
+	border-bottom: @main-border;
+	padding: 0;
+
+
+	&__logo-link {
+		width: 92px;
+		margin: 0 auto;
+		margin-bottom: 23px;
+		margin-top: 10px;
+
+	}
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__delivery {
+		display: none;
+	}
+}
+
+
+.main-nav--opened .main-nav__toggler {
+	display: block;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	border: none;
+	right: 9.4%;
+	top: -15px;
+	background: transparent;
+	cursor: pointer;
+
+	&::after,
+	&::before {
+		content: "";
+		position: absolute;
+		right: 0;
+		top: 40px;
+		display: block;
+		width: 26px;
+		height: 2px;
+		background-color: #000;
+	}
+
+	&::after {
+		transform: rotate(-45deg);
+		box-shadow: none;
+	}
+
+	&::before {
+		transform: rotate(45deg);
+		box-shadow: none;
+
+
+	}
+}
+
+.main-nav--closed {
+
+	.main-nav__toggler {
+		display: block;
+		width: 50px;
+		height: 50px;
+		border: none;
+		right: 0;
+		top: 30px;
+		background: transparent;
+		cursor: pointer;
+		position: absolute;
+		top: -20px;
+		right: 9.4%;
+
+		&::after,
+		&::before {
+			content: "";
+			position: absolute;
+			right: 0;
+			top: 40px;
+			display: block;
+			width: 26px;
+			height: 2px;
+			background-color: #000;
+			transform: rotate(0deg);
+		}
+
+		&::before {
+			margin-top: 6px;
+			box-shadow: 0px 6px 0px rgb(0, 0, 0);
+		}
+	}
+
+	.site-list,
+	.user-list {
+		display: none;
+	}
+
+}
+
+.main-nav--nojs {
+	.main-nav__toggler {
+		display: none;
+	}
+
+	.site-list,
+	.user-list {
+		display: block;
+	}
+
+}
+
+
+
+
+
+@media (min-width: @tablet-width) {
+
+	.main-nav--closed,
+	.main-nav--opened {
+		.main-nav__toggler {
+			display: none;
+		}
+
+		.site-list {
+			display: flex;
+		}
+
+		.user-list {
+			display: flex;
+		}
+	}
+
+	.main-nav {
+		margin: 0;
+		padding: 0;
+		width: 768px;
+		margin: 0 auto;
+		&__wrapper {
+			flex-direction: row;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			
+		}
+
+		&__delivery {
+			display: block;
+			font-size: 15px;
+			font-weight: normal;
+			padding: 15px 35px;
+			order: 1;
+		margin-bottom: -60px;
+		padding: 0;
+
+		}
+		&__logo-link{
+			margin: 0;
+			margin-left: 50px;
+			margin-top: 5px;
+		}
+	}
+
+}
+
+
+
+
+@media (min-width: @desktop-width) {
+	.main-nav {
+		width: 1150px;
+		&__wrapper {
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			margin: 0;
+		}
+		&__delivery{
+			display: block;
+			padding-top: 25px;
+		}
+		&__offer-list{
+			margin-bottom:  -60px;
+			
+		}
+		&__logo-link{
+			margin: 0 auto;
+		}
+
+
+	}
+}
