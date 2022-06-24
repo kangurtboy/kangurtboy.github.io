@@ -8,6 +8,3 @@ node_modules/
 npm-debug.*
 source/css/*.css
 Thumb.db
-package.json
-package-lock.json
-gulpfile.js
