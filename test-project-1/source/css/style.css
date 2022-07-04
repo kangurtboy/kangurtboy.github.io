@@ -4,7 +4,7 @@
 .advantages::before {
   content: "";
   position: absolute;
-  top: 1565px;
+  top: 1535px;
   display: block;
   width: 0;
   height: 500px;
@@ -1571,7 +1571,6 @@ textarea::placeholder {
   }
 }
 .stats {
-  width: 320px;
   margin: 0 auto;
 }
 .stats__slogan {
