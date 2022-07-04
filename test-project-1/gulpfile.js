@@ -19,14 +19,14 @@ function lessCompiller () {
 }))
 
 
-.pipe(gulp.dest('./source/css/min-css'))
+.pipe(gulp.dest('./source/css/'))
 .pipe(browserSync.stream())
 }
 
 
 
 function mincssCompiling() {
-    return gulp.src('./source/css/min-css/style.css')
+    return gulp.src('./source/css/style.css')
         .pipe(rename({
             suffix: '-min'
 				}))
@@ -37,7 +37,7 @@ function mincssCompiling() {
         .pipe(mincss({
             level: 2
         }))
-        .pipe(gulp.dest('./source/css/min-css'))
+        .pipe(gulp.dest('./source/css/'))
         .pipe(browserSync.stream())
 };
 
@@ -54,7 +54,7 @@ function live() {
 function watcher() {
 		gulp.watch('./*.html').on('change', browserSync.reload);
 		gulp.watch(lessFiles , lessCompiller);
-    gulp.watch('./source/css/min-css/style.css',  mincssCompiling);
+    gulp.watch('./source/css/style.css',  mincssCompiling);
 };
 
 
