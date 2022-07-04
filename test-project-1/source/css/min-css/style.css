@@ -268,7 +268,7 @@
   .main-nav {
     margin: 0;
     background: #000;
-    width: 640px;
+    width: 100%;
     margin: 0 auto;
   }
   .main-nav__wrapper {
@@ -283,7 +283,7 @@
 }
 @media (min-width: 1200px) {
   .main-nav {
-    width: 960px;
+    width: 100%;
   }
   .main-nav__wrapper {
     width: 960px;
