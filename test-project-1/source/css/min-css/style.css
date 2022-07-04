@@ -791,7 +791,7 @@ textarea::placeholder {
 @media (min-width: 768px) {
   .page-header {
     background: #000;
-    background-image: url("/images/main-bg-tablet.jpg");
+    background-image: url("../images/main-bg-tablet.jpg");
     background-repeat: no-repeat;
     background-position: center -9px;
   }
