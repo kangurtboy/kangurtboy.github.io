@@ -87,7 +87,21 @@
     width: 960px;
     margin: 0 auto;
     margin-top: 80px;
-    margin-bottom: 200px;
+    margin-bottom: 250px;
+    overflow-x: hidden;
+  }
+  .advantages::before {
+    content: "";
+    position: absolute;
+    top: 1340px;
+    display: block;
+    width: 0;
+    height: 500px;
+    border-left: 50vw solid transparent;
+    border-right: 50vw solid transparent;
+    border-top: 100px solid #353535;
+    left: 0 ;
+    right: 0;
   }
   .advantages__item {
     flex-direction: column;
@@ -811,8 +825,9 @@ textarea::placeholder {
   .page-header {
     background-image: url("../../images/main-bg-desktop.jpg");
     width: 100%;
-    background-position: center 0;
-    background-size: cover;
+    background-position: center;
+    background-size: contain;
+    background-repeat: repeat;
   }
   .page-header__logo {
     height: 648px;
@@ -1726,12 +1741,12 @@ textarea::placeholder {
 }
 @media (min-width: 1200px) {
   .block-mock {
-    height: 720px;
+    height: 620px;
   }
   .stats {
     display: flex;
     width: 960px;
-    margin-top: -879px;
+    margin-top: -778px;
   }
   .stats__header {
     display: block;
