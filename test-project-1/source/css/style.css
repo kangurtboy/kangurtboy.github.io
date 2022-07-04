@@ -1,6 +1,18 @@
 .advantages {
   margin-bottom: 90px;
 }
+.advantages::before {
+  content: "";
+  position: absolute;
+  top: 1565px;
+  display: block;
+  width: 0;
+  height: 500px;
+  border-left: 48vw solid transparent;
+  border-right: 50vw solid transparent;
+  border-top: 50px solid #242424;
+  right: 0;
+}
 .advantages__list {
   background-color: #242424;
   color: #f7f4f1;
@@ -55,16 +67,8 @@
     margin-bottom: 150px;
   }
   .advantages::before {
-    content: "";
-    position: absolute;
     top: 1422px;
-    display: block;
-    width: 0;
-    height: 500px;
-    border-left: 50vw solid transparent;
-    border-right: 50vw solid transparent;
     border-top: 50px solid #353535;
-    right: 0;
   }
   .advantages__toggles {
     display: none;
