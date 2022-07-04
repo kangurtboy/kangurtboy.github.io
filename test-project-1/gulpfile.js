@@ -31,9 +31,9 @@ function mincssCompiling() {
             suffix: '-min'
 				}))
 				.pipe(autoprefix({
-					browsers: ['last 20 versions'],
+					overrideBrowserslist:  ['last 10 versions'],
 					cascade: false
-			}))
+				}))
         .pipe(mincss({
             level: 2
         }))
