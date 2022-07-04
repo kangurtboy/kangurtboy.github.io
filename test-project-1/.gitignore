@@ -6,6 +6,5 @@
 *.psd
 node_modules/
 npm-debug.*
-source/css/*.css
 Thumb.db
 package-lock.json
