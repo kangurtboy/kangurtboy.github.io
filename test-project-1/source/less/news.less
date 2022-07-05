@@ -1,5 +1,29 @@
 .news{
 	margin-bottom: 60px;
+	time {
+		background-color: #000000;
+		color: #ffffff;
+		padding: 12px;
+		padding-bottom: 0;
+		height: fit-content;
+		margin-right: 20px;
+		position: relative;
+		display: block;
+		text-align: center;
+		min-width: 60px;
+		.font-light();
+		&::before{
+			.triangle();
+			border-top: 15px solid #000000;
+			top: 100%;
+			border-left: 30px solid transparent;
+			border-right: 30px solid transparent;
+			left: 0;
+		}
+	}
+	&__day{
+		.font-large();
+	}
 	&__title{
 		.font-large();
 	}
@@ -12,10 +36,11 @@
 	}
 	&__item{
 		display: flex;
-		padding: 20px 0;
+		padding: 20px;
 		border-bottom: 1px solid #e5ddd5;
 		color: #000000;
 		font-weight: 600;
+		align-items: center;
 	}
 	&__to-all{
 		border-color: #e5ddd5;
@@ -26,9 +51,8 @@
 		margin-top: 27px;
 		
 	}
-	&__day{
-		padding-top: 20px;
-		margin-right: 35px;
+	&__text{
+		.font-text();
 	}
 
 }
@@ -48,6 +72,12 @@
 			width: 280px;
 			border:none;
 			margin-right: 40px;
+			align-items: initial;
+			padding: 0;
+		}
+		&__text{
+			 margin-top: 0;
+			 padding-top: 0;
 		}
 		&__wrapper{
 			position: relative;
@@ -59,7 +89,7 @@
 		}
 		&__title{
 			position: absolute;
-		top: -50px
+			top: -50px
 		}
 	}
 }
@@ -68,6 +98,13 @@
 	.news{
 		width: 960px;
 		margin-bottom: 45px;
-
+		&__title{
+			margin-left: 70px;
+		}
+		&__list{
+			padding-top: 50px;
+			padding-bottom: 40px;
+		}
 	}
+	
 }
