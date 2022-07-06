@@ -183,7 +183,7 @@
   font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
-  border: 1px solid #3e3e3e;
+  border: 1px solid #e5ddd5;
   text-decoration: none;
   color: #000;
   font-weight: 600;
@@ -1401,10 +1401,9 @@ textarea::placeholder {
 }
 @media (min-width: 768px) {
   .review {
-    padding: 50px 65px;
+    padding: 50px 0;
     padding-top: 0;
     margin: 0 auto;
-    margin-bottom: 70px;
     width: 640px;
     border-top: none;
   }
@@ -1413,6 +1412,10 @@ textarea::placeholder {
   }
   .review__text {
     max-width: initial;
+  }
+  .review__title {
+    margin: 0;
+    padding-top: 16px;
   }
   .review__write {
     display: inline-block;
@@ -1428,48 +1431,60 @@ textarea::placeholder {
     border: 1px solid #e5ddd5;
     padding: 30px 90px;
     width: 100%;
-  }
-  .review__wrapper {
     position: relative;
   }
-  .review__controls {
-    display: flex;
+  .review__list::after,
+  .review__list::before {
+    content: '';
+    width: 1px;
+    height: 100%;
     position: absolute;
-    justify-content: space-between;
-    top: 150px;
+    top: 0;
+    background-color: #e5ddd5;
+  }
+  .review__list::after {
+    right: 50px;
+  }
+  .review__list::before {
+    left: 50px;
+  }
+  .review__controls {
+    display: block;
+    position: absolute;
+    top: 53%;
+    width: 100%;
   }
   .review__prew,
   .review__next {
-    width: 50px;
-    height: 219px;
-    background: transparent;
-    padding: 0;
-    margin: 0;
     display: block;
     position: absolute;
-    top: 0;
+    background-color: transparent;
     border: none;
+    width: 100%;
+    cursor: pointer;
   }
-  .review__prew {
-    /* 	background-image: url(../../images/left-arrow.svg);
-			background-size: 30%;
-			background-position: center center;
-			background-repeat: no-repeat;
-			cursor: pointer;
-			top: 50%;
-			border: none;
-			border-right: 1px solid #e5ddd5; */
+  .review__prew::before,
+  .review__next::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 48vw solid transparent;
+    border-right: 50vw solid transparent;
+    border-top: 50px solid #242424;
+    right: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 15px solid #000000;
   }
-  .review__next {
-    /* 		background-image: url(../../images/left-arrow.svg);
-			background-size: 30%;
-			background-position: center center;
-			background-repeat: no-repeat;
-			transform: rotate(180deg);
-			border: none;
-			border-right: 1px solid #e5ddd5;
-			cursor: pointer;
-			left: 0; */
+  .review__prew::before {
+    transform: rotate(90deg);
+    left: 3%;
+  }
+  .review__next::before {
+    right: 3%;
+    transform: rotate(-90deg);
   }
   .review__toggles {
     position: relative;
@@ -1483,18 +1498,44 @@ textarea::placeholder {
   .review__toggles button:nth-child(3) {
     margin-right: 0;
   }
+  .review__item {
+    margin: 0;
+  }
   .review__item img {
     width: 80px;
     height: 80px;
     border-radius: 50%;
+    margin-right: 30px;
   }
 }
 @media (min-width: 1200px) {
   .review {
     width: 960px;
+    padding-left: 70px;
+    padding-right: 70px;
   }
   .review__list {
+    margin: 0;
     padding: 0;
+  }
+  .review__list::after,
+  .review__list::before {
+    content: '';
+    width: 50px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: transparent;
+    border: 1px solid #e5ddd5;
+  }
+  .review__list::after {
+    right: -70px;
+  }
+  .review__list::before {
+    left: -70px;
+  }
+  .review__text {
+    padding-right: 70px;
   }
   .review .title__wrapper {
     justify-content: space-around;
@@ -1517,19 +1558,13 @@ textarea::placeholder {
     margin: 0;
     margin-right: 75px;
   }
-  .review__controls {
-    top: -163px;
+  .review__prew::before {
+    transform: rotate(90deg);
+    left: -5.5%;
   }
-  .review__prew,
-  .review__next {
-    border: 1px solid #e5ddd5;
-    height: 163px;
-  }
-  .review__prew {
-    left: 4%;
-  }
-  .review__next {
-    right: 4%;
+  .review__next::before {
+    right: 9%;
+    transform: rotate(-90deg);
   }
 }
 .site-list {
@@ -1538,6 +1573,7 @@ textarea::placeholder {
 }
 .site-list__item a {
   line-height: 24px;
+  border: 1px solid #e5ddd5;
   color: #000;
   font-weight: 600;
   display: inline-block;
