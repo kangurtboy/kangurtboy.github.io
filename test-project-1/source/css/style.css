@@ -89,8 +89,10 @@
   .advantages::before {
     top: 1525px;
     border-top: 50px solid #353535;
-    left: 0;
-    transform: translateX(0);
+    left: -50%;
+    transform: translateX(48.5%);
+    border-left: 50vw solid transparent;
+    border-right: 50vw solid transparent;
   }
   .advantages::after {
     display: none;
@@ -1432,39 +1434,42 @@ textarea::placeholder {
   }
   .review__controls {
     display: flex;
-    position: relative;
+    position: absolute;
     justify-content: space-between;
-    top: -181px;
+    top: 150px;
   }
   .review__prew,
   .review__next {
     width: 50px;
-    height: 181px;
+    height: 219px;
     background: transparent;
     padding: 0;
     margin: 0;
+    display: block;
     position: absolute;
+    top: 0;
+    border: none;
   }
   .review__prew {
-    background-image: url(../../../images/left-arrow.svg);
-    background-size: 30%;
-    background-position: center center;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    top: 50%;
-    border: none;
-    border-right: 1px solid #e5ddd5;
+    /* 	background-image: url(../../images/left-arrow.svg);
+			background-size: 30%;
+			background-position: center center;
+			background-repeat: no-repeat;
+			cursor: pointer;
+			top: 50%;
+			border: none;
+			border-right: 1px solid #e5ddd5; */
   }
   .review__next {
-    background-image: url(../../../images/left-arrow.svg);
-    background-size: 30%;
-    background-position: center center;
-    background-repeat: no-repeat;
-    transform: rotate(180deg);
-    border: none;
-    border-right: 1px solid #e5ddd5;
-    cursor: pointer;
-    right: 0;
+    /* 		background-image: url(../../images/left-arrow.svg);
+			background-size: 30%;
+			background-position: center center;
+			background-repeat: no-repeat;
+			transform: rotate(180deg);
+			border: none;
+			border-right: 1px solid #e5ddd5;
+			cursor: pointer;
+			left: 0; */
   }
   .review__toggles {
     position: relative;
