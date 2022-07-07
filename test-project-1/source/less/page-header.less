@@ -35,6 +35,22 @@
 		}
 	}
 
+	.inner-header{
+		position: relative;
+		&::before{
+			.triangle;
+			bottom:0;
+			height: 0;
+			border-top:65px solid transparent;
+			border-left: 50vw solid @bg-lightgrey;
+			border-right: 50vw solid @bg-lightgrey;
+			
+		}
+		.page-header__logo{
+			height: 285px;
+		}
+	}
+
 }
 
 @media (min-width: @desktop-width) {

@@ -926,6 +926,27 @@ textarea::placeholder {
     margin: 0 auto;
     margin-top: 40px;
   }
+  .inner-header {
+    position: relative;
+  }
+  .inner-header::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 0;
+    border-left: 48vw solid transparent;
+    border-right: 50vw solid transparent;
+    border-top: 50px solid #242424;
+    right: 0;
+    bottom: 0;
+    height: 0;
+    border-top: 65px solid transparent;
+    border-left: 50vw solid #f8f5f2;
+    border-right: 50vw solid #f8f5f2;
+  }
+  .inner-header .page-header__logo {
+    height: 285px;
+  }
 }
 @media (min-width: 1200px) {
   .page-header {
