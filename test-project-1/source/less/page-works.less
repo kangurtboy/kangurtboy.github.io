@@ -4,7 +4,7 @@
 	&__title {
 		.font-large();
 		margin-bottom: 35px;
-		margin-top: 35px;
+		padding-top: 35px;
 	}
 }
 
@@ -15,13 +15,13 @@
 .works-list {
 	.list-reset();
 	margin-bottom: 100px;
+	padding: 0 20px;
 
 	&__item {
 		border: 1px solid #e5ddd5;
 		border-top: none;
 		margin-bottom: 20px;
 		background-color: #f8f5f2;
-
 	}
 }
 
@@ -34,8 +34,6 @@
 		height: 100%;
 		width: 100%;
 		margin-bottom: 25px;
-
-
 	}
 
 	&__name {
@@ -46,7 +44,6 @@
 		text-transform: capitalize;
 		font-weight: 600;
 		margin-bottom: 25px;
-
 	}
 
 	&__text {
@@ -55,7 +52,6 @@
 		padding: 0 20px;
 		margin-bottom: 25px;
 	}
-
 }
 
 
@@ -127,8 +123,8 @@
 
 .customer__special{
 	position: absolute;
-	left: 20px;
-	top: 40px;
+	left: 30px;
+	transform: translateY(-120px);
 	.font-large();
 	color:white;
 	z-index: 1;
@@ -141,7 +137,6 @@
 		z-index: -1;
 		left: -10px;
 		top: -4px;
-
 	}
 }
 
@@ -216,19 +211,8 @@
 		margin-top: auto;
 	}
 	.customer__special{
-		left: 20px;
-		top: 40px;
-		&::before{
-			.triangle();
-			border-top:25px solid @main-color;
-			border-bottom:25px solid @main-color;
-			border-left:200px solid @main-color;
-			border-right:9px solid transparent;
-			z-index: -1;
-			left: -10px;
-			top: -4px;
-
-		}
+		left: 10px;
+		top: 170px;
 	}
 
 }
@@ -263,21 +247,29 @@
 				flex-direction: row;
 				margin-right: 0;
 
-
-
 				.customer__name {
 					padding-top: 140px;
 					display: block;
-					text-align: center;
+					text-align: left;
+					margin-left: 40px;
 					margin-bottom: 40px;
 				}
-
 			}
 		}
 
 		&__item:nth-child(4) {
 			margin-right: 0;
 			margin-left: 40px;
+		}
+	}
+	.customer__special{
+		left: initial;
+		right: 11px;
+		top: 170px;
+		&::before{
+			border-right:200px solid @main-color;
+			border-left:9px solid transparent;
+			left: -15px;
 		}
 	}
 
