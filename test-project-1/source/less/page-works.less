@@ -115,8 +115,13 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	height: 100%;
+	border: 1px solid @border-color;
+	border-top: none;
+	height: auto;
+	margin-top:-30px;
+	padding-top:30px;
 }
+
 
 .customer__special{
 	position: absolute;
@@ -142,6 +147,12 @@
 	.works {
 		width: 768px;
 		margin: 0 auto;
+		&__column{
+			width: 100%;
+			border-top: 1px solid @border-color;
+			border-left: none;
+			margin-top: 0;
+		}
 	}
 
 	.title {
@@ -195,10 +206,6 @@
 		}
 	}
 
-	.works__column {
-		height: auto;
-	}
-
 	.service-wrapper {
 		height: auto;
 	}
@@ -210,10 +217,6 @@
 	.customer__special{
 		left: 10px;
 		top: 170px;
-	}
-	.works__column{
-		border: 1px solid @border-color;
-		border-left: none;
 	}
 
 }
