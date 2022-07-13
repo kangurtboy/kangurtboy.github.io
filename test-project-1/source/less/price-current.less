@@ -1,5 +1,7 @@
 .price-current {
 	padding: 20px;
+	padding-top: 40px;
+	padding-bottom: 60px;
 	background-color: #353535;
 	color: #ffffff;
 
@@ -8,7 +10,8 @@
 		padding-top: 35px;
 		margin-bottom: 30px;
 	}
-	&__watch{
+
+	&__watch {
 		width: 58px;
 		height: 57px;
 	}
@@ -28,6 +31,28 @@
 
 	.table-addtional {
 		display: block;
+	}
+
+	position: relative;
+
+	&::before {
+		.triangle;
+		top: 0;
+		height: 0;
+		border-top: 50px solid @bg-lightgrey;
+		border-bottom: 65px solid transparent;
+		border-left: 50vw solid transparent;
+		border-right: 50vw solid transparent;
+	}
+
+	&::after {
+		.triangle;
+		bottom: -65px;
+		height: 0;
+		border-top: 50px solid transparent;
+		border-bottom: 65px solid @bg-darkgrey;
+		border-left: 50vw solid @bg-darkgrey;
+		border-right: 50vw solid @bg-darkgrey;
 	}
 
 }
@@ -67,10 +92,20 @@
 }
 
 @media (min-width: @tablet-width) {
-	.price-current{
+	.price-current {
 		margin: 0 auto;
 		width: 100%;
+		padding-top: 50px;
+		padding-bottom: 40px;
+		&::after{
+			display: none;
+		}
+
+		&__title {
+			text-align: left;
+		}
 	}
+
 	.price-table {
 		border-collapse: collapse;
 
@@ -79,7 +114,8 @@
 			display: table-row;
 
 		}
-		.table-addtional{
+
+		.table-addtional {
 			display: table-cell;
 		}
 
@@ -96,58 +132,69 @@
 		.table-hidden {
 			display: none;
 		}
-		.field{
+
+		.field {
 			display: table-cell;
 			padding-left: 20px;
 
 		}
-		
-		
+
+
 	}
-	.price-current__watch{
+
+	.price-current__watch {
 		width: 72px;
 		height: 71px;
 	}
-	.price-current__time{
-font-size: 30px;
-font-weight: bold;
-text-transform: uppercase;
-margin-top: 12px;
+
+	.price-current__time {
+		font-size: 30px;
+		font-weight: bold;
+		text-transform: uppercase;
+		margin-top: 12px;
 
 	}
-	.price-current__stock{
-justify-content: space-between;
+
+	.price-current__stock {
+		justify-content: space-between;
 	}
 }
 
-@media (min-width: @desktop-width){
-	.price-current{
+@media (min-width: @desktop-width) {
+	.price-current {
 		width: 100%;
 		margin: 0 auto;
 		padding-bottom: 85px;
-		&__title{
+		padding-top: 70px;
+
+		&::before {
+			display: none;
+		}
+
+		&__title {
 			width: 960px;
 			margin: 0 auto;
 			margin-bottom: 55px;
-			text-align: left;
 		}
 	}
-	
-	.price-current__stock{
+
+	.price-current__stock {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		width: 270px;
-		height:auto;
+		height: auto;
 
 	}
-	.price-current__watch{
+
+	.price-current__watch {
 		width: 142px;
 		height: 139px;
 		margin: 0;
 		padding: 0;
 	}
-	.price-current__time{
+
+	.price-current__time {
 		width: 125px;
 		font-size: 20px;
 		line-height: 20px;
@@ -157,13 +204,15 @@ justify-content: space-between;
 		margin: 0;
 		text-align: center;
 	}
-	.price-current__column{
+
+	.price-current__column {
 		width: 960px;
 		display: flex;
 		justify-content: space-between;
 		margin: 0 auto;
 	}
-	.price-table{
+
+	.price-table {
 		width: 640px;
 		margin: 0 auto;
 		margin-right: 60px;
