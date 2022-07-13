@@ -627,6 +627,12 @@
     margin-bottom: 80px;
   }
 }
+.page-form {
+  background-color: #f8f5f2;
+  padding: 0 20px;
+  padding-bottom: 70px;
+  position: relative;
+}
 .page-form__title {
   font-size: 30px;
   text-align: center;
@@ -637,6 +643,21 @@
   padding: 0;
   margin-bottom: 30px;
   margin-top: 35px;
+}
+.page-form::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0;
+  border-left: 48vw solid transparent;
+  border-top: 50px solid #242424;
+  right: 0;
+  bottom: -105px;
+  height: 0;
+  border-top: 40px solid #f8f5f2;
+  border-bottom: 65px solid transparent;
+  border-left: 50vw solid transparent;
+  border-right: 50vw solid transparent;
 }
 input[type="text"]::placeholder,
 textarea::placeholder {
@@ -681,6 +702,7 @@ textarea::placeholder {
   border: 1px solid #e5ddd5;
   width: 100%;
   margin-bottom: 40px;
+  padding-left: 20px;
 }
 .form legend {
   font-size: 30px;
@@ -708,11 +730,13 @@ textarea::placeholder {
   font-size: 18px;
 }
 .form__beard-list .beard__item {
-  margin: 0 25px;
+  width: 33%;
+  padding: 0 25px;
 }
 .form__beard-list .beard__item img {
   top: 20px;
   margin-bottom: 90px;
+  width: min-content;
 }
 .form__beard-list .beard__item label {
   margin-top: 20px;
@@ -738,7 +762,7 @@ textarea::placeholder {
   top: -50px;
   border-radius: 50%;
   border: 2px solid #e7e0d8;
-  background-image: url(../../../images/Shape.png);
+  background-image: url(../../images/Shape.png);
   background-repeat: no-repeat;
   background-size: 35%;
   background-position: center;
@@ -747,7 +771,9 @@ textarea::placeholder {
   color: #ffffff;
   background-color: #826550;
   border: none;
-  margin-bottom: 40px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .form input[type="checkbox"] {
   display: none;
@@ -782,7 +808,7 @@ textarea::placeholder {
   content: "";
   display: inline-block;
   position: absolute;
-  background-image: url(../../../images/checked.svg);
+  background-image: url(../../images/checked.svg);
   background-repeat: no-repeat;
   background-size: 50%;
   background-position: center;
@@ -791,6 +817,22 @@ textarea::placeholder {
   margin-left: 20px;
 }
 @media (min-width: 768px) {
+  .page-form {
+    position: initial;
+    /* &::before{
+			.triangle;
+			top: 350px;
+			height: 0;
+	
+			border-top: 60px solid transparent;
+			border-bottom: 65px solid @bg-lightgrey;
+			border-left: 50vw solid @bg-lightgrey;
+			border-right: 50vw solid @bg-lightgrey;
+		} */
+  }
+  .page-form::after {
+    display: none;
+  }
   .form__name-list {
     width: 768px;
     margin: 0 auto;
@@ -834,7 +876,6 @@ textarea::placeholder {
   }
   .form__list-title {
     position: relative;
-    background-color: #fff;
   }
   .form__list-title::before,
   .form__list-title::after {
@@ -1248,7 +1289,7 @@ textarea::placeholder {
 .price-current {
   padding: 20px;
   padding-top: 40px;
-  padding-bottom: 60px;
+  padding-bottom: 70px;
   background-color: #353535;
   color: #ffffff;
   position: relative;
@@ -1306,9 +1347,9 @@ textarea::placeholder {
   border-right: 50vw solid transparent;
   border-top: 50px solid #242424;
   right: 0;
-  bottom: -65px;
+  bottom: -75px;
   height: 0;
-  border-top: 50px solid transparent;
+  border-top: 65px solid #353535;
   border-bottom: 65px solid #292929;
   border-left: 50vw solid #292929;
   border-right: 50vw solid #292929;
