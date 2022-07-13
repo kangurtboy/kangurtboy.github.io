@@ -988,8 +988,6 @@ textarea::placeholder {
   padding: 0 20px;
 }
 .works-list__item {
-  border: 1px solid #e5ddd5;
-  border-top: none;
   margin-bottom: 20px;
   background-color: #f8f5f2;
 }
@@ -1151,8 +1149,9 @@ textarea::placeholder {
     position: relative;
   }
   .works-list__item img {
-    width: 270px;
+    width: 100%;
     height: 294px;
+    width: 270px;
     margin-bottom: -5px;
   }
   .works-list__item--special img {
@@ -1173,6 +1172,10 @@ textarea::placeholder {
     left: 10px;
     top: 170px;
   }
+  .works__column {
+    border: 1px solid #e5ddd5;
+    border-left: none;
+  }
 }
 @media (min-width: 1200px) {
   .works {
@@ -1185,15 +1188,14 @@ textarea::placeholder {
   .works-list {
     display: flex;
     flex-wrap: wrap;
-  }
-  .works-list__item:nth-child(3) {
-    margin-right: 0;
+    align-items: stretch;
   }
   .works-list__item {
-    width: 300px;
+    width: 293px;
     flex-direction: column;
     margin-right: 20px;
     height: auto;
+    flex-shrink: auto;
   }
   .works-list__item--special {
     width: 960px;
@@ -1207,9 +1209,8 @@ textarea::placeholder {
     margin-left: 40px;
     margin-bottom: 40px;
   }
-  .works-list__item:nth-child(4) {
+  .works-list__item:nth-child(4n) {
     margin-right: 0;
-    margin-left: 40px;
   }
   .works-list__item--special img {
     height: 480px;
@@ -1219,12 +1220,26 @@ textarea::placeholder {
   .customer__special {
     left: initial;
     right: 11px;
-    top: 170px;
+    top: 160px;
   }
   .customer__special::before {
     border-right: 200px solid #826550;
     border-left: 9px solid transparent;
     left: -15px;
+  }
+  .works__column {
+    box-sizing: border-box;
+    border: 1px solid #e5ddd5;
+    border-top: none;
+    height: 100%;
+  }
+  .works-list__item--special .works__column {
+    border-top: 1px solid #e5ddd5;
+    border-left: none;
+  }
+  .works-list__item--special .services__item {
+    width: 33%;
+    padding-right: 0;
   }
 }
 .price-current {
