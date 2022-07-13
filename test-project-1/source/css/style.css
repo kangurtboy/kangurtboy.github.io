@@ -819,16 +819,6 @@ textarea::placeholder {
 @media (min-width: 768px) {
   .page-form {
     position: initial;
-    /* &::before{
-			.triangle;
-			top: 350px;
-			height: 0;
-	
-			border-top: 60px solid transparent;
-			border-bottom: 65px solid @bg-lightgrey;
-			border-left: 50vw solid @bg-lightgrey;
-			border-right: 50vw solid @bg-lightgrey;
-		} */
   }
   .page-form::after {
     display: none;
@@ -874,6 +864,9 @@ textarea::placeholder {
     margin: 0 auto;
     margin-bottom: 80px;
   }
+  .form__name-list .form__item {
+    width: 33%;
+  }
   .form__list-title {
     position: relative;
   }
@@ -892,6 +885,9 @@ textarea::placeholder {
   }
   .form__list-title::before {
     left: 10%;
+  }
+  .beard__item {
+    width: initial !important;
   }
 }
 @media (min-width: 1200px) {
