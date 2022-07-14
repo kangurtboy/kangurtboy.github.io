@@ -408,6 +408,9 @@
   display: flex;
   flex-direction: column;
 }
+.modal__open {
+  display: block;
+}
 .news {
   margin-bottom: 30px;
 }
