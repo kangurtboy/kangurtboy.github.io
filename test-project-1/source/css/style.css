@@ -349,11 +349,13 @@
   margin: 0 auto;
   position: fixed;
   top: 20%;
-  left: 35%;
+  left: 50%;
+  transform: translateX(-50%);
   width: auto;
   background-color: #f8f5f2;
   padding: 40px 20px;
   width: 360px;
+  z-index: 9999;
 }
 .modal__title {
   font-size: 30px;
