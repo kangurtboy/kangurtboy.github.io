@@ -460,9 +460,7 @@
 }
 .main-nav__logo-link {
   width: 92px;
-  margin: 0 auto;
-  margin-bottom: 23px;
-  margin-top: 10px;
+  margin: 23px auto;
 }
 .main-nav__wrapper {
   display: flex;
@@ -506,12 +504,10 @@
   width: 50px;
   height: 50px;
   border: none;
-  right: 0;
-  top: 30px;
   background: transparent;
   cursor: pointer;
   position: absolute;
-  top: -20px;
+  top: -5px;
   right: 9.4%;
 }
 .main-nav--closed .main-nav__toggler::after,
