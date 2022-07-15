@@ -1097,21 +1097,21 @@ textarea::placeholder {
 .services__item--hair-cut::before {
   width: 21px;
   height: 20px;
-  background-image: url(../../../images/scissors-icon.png);
+  background-image: url(../../images/scissors-icon.png);
   background-repeat: no-repeat;
   background-size: 100%;
 }
 .services__item--beard::before {
   width: 23px;
   height: 21px;
-  background-image: url(../../../images/beard-icon.png);
+  background-image: url(../../images/beard-icon.png);
   background-repeat: no-repeat;
   background-size: 100%;
 }
 .services__item--mustache::before {
   width: 45px;
   height: 12px;
-  background-image: url(../../../images/mustache-icon.png);
+  background-image: url(../../images/mustache-icon.png);
   background-repeat: no-repeat;
   background-size: 100%;
   left: -45px;
