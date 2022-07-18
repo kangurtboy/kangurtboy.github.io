@@ -431,9 +431,28 @@
   background-color: #56c3b2;
 }
 @media (min-width: 768px) {
+  .feature {
+    position: relative;
+    top: -102px;
+  }
+  .feature::before {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background-image: url(../../images/zigzag-fill.svg);
+    background-repeat: no-repeat;
+  }
+  .feature__wrapper {
+    width: 768px;
+    margin: 0 auto;
+    padding: 0 50px;
+  }
   .feature__list {
     display: flex;
-    margin-bottom: 60px;
+    margin-bottom: -40px;
   }
   .feature__item p {
     padding-right: 140px;

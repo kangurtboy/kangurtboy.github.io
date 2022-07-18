@@ -48,9 +48,26 @@
 
 @media(min-width: @tablet-width) {
 	.feature {
+		position: relative;
+		top: -102px;
+		&::before{
+			content: '';
+			position: absolute;
+			bottom: -15px;
+			left: 0;
+			width: 100%;
+			height: 30px;
+			background-image: url(../../images/zigzag-fill.svg);
+			background-repeat: no-repeat;
+		}
+		&__wrapper{
+			width: @tablet-width;
+			margin: 0 auto;
+			padding:0 50px;
+		}
 	&__list {
 		display: flex;
-		margin-bottom: 60px;
+		margin-bottom: -40px;
 	}
 	&__item{
 		p{
