@@ -77,16 +77,23 @@
 }
 }
 
-@media(min-width: @desktop-width){
-.feature{
-	width: 1150px;
-	margin: 0 auto;
-	&__list{
-		width: 100%;
-	}
-	&__item{
-		flex-grow: 1;
-	}
+@media(min-width: @desktop-width) {
+	.feature {
+		&::before {
+			background-position: center;
+		}
 
-}
+		&__wrapper {
+			width: @desktop-width;
+		}
+
+		&__list {
+			width: 100%;
+		}
+
+		&__item {
+			flex-grow: 1;
+		}
+
+	}
 }

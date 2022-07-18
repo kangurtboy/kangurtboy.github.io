@@ -459,9 +459,11 @@
   }
 }
 @media (min-width: 1050px) {
-  .feature {
-    width: 1150px;
-    margin: 0 auto;
+  .feature::before {
+    background-position: center;
+  }
+  .feature__wrapper {
+    width: 1050px;
   }
   .feature__list {
     width: 100%;
