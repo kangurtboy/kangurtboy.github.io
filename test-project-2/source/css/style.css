@@ -1596,13 +1596,13 @@ a {
 }
 @font-face {
   font-family: 'Open Sans';
-  src: url('../../fonts/opensans.woff') format('woff');
+  src: url('../fonts/opensans.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Open Sans';
-  src: url('../../fonts/opensansbold.woff') format('woff');
+  src: url('../fonts/opensansbold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 }
