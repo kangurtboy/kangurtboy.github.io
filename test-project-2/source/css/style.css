@@ -1529,7 +1529,11 @@
     display: flex;
     align-items: center;
     padding: 35px;
+  }
+  .site-list .border-right {
+    border-right: 1px solid #e7e7e7;
     padding-left: 0;
+    height: 100%;
   }
 }
 .user-list {
