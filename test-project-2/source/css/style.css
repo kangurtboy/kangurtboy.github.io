@@ -593,6 +593,12 @@
   }
   .main-nav__logo-link {
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+  .main-nav__logo-link img {
+    height: 73px;
+    padding: 8px 0;
   }
 }
 .owerlay {
@@ -834,13 +840,12 @@
   }
 }
 @media (min-width: 768px) and (min-width: 1050px) {
-  .page-header {
+  .main-nav {
     width: 1150px;
   }
   .logo-link {
     margin-left: auto;
-    padding-bottom: 40px;
-    border-bottom: 1px solid #e7e7e7;
+    padding-bottom: 0;
   }
   .offer-list {
     display: flex;
@@ -1515,8 +1520,16 @@
     margin: 0;
     order: -1;
     font-size: 17px;
-    padding-top: 12px;
-    padding-bottom: 16px;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    align-items: center;
+  }
+  .site-list__item {
+    display: flex;
+    align-items: center;
+    padding: 35px;
+    padding-left: 0;
   }
 }
 .user-list {
@@ -1567,8 +1580,7 @@
 @media (min-width: 1050px) {
   .user-list {
     font-size: 17px;
-    padding-top: 12px;
-    padding-bottom: 16px;
+    padding: 0;
   }
 }
 * {
