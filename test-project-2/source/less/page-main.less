@@ -7,11 +7,13 @@
 	min-height: 285px;
 	display: block;
 	text-align: center;
+	padding: 0 30px; 
 
-	background-image: url(../../../images/mishka-bg-mobile.jpg);
-	background-size: cover;
+	background-image: url(../../images/mishka-bg-mobile.jpg);
+	background-color: @light-grey;
+	background-size: contain;
 	background-repeat: no-repeat;
-	background-position: center top;
+	background-position: center ;
 	padding-top: 75px;
 }
 
@@ -21,7 +23,7 @@
 			font-size: 43px;
 			line-height: 50px;
 			padding: 120px 80px ;
-			background-image: url(../../../images/mishka-bg-tablet.jpg);
+			background-image: url(../../images/mishka-bg-tablet.jpg);
 			background-size: contain;
 			min-height: 746px;
 		}
@@ -31,8 +33,14 @@
 @media(min-width: @desktop-width){
 .page-main{
 	&__title{
+		background-image: url(../../images/mishka-bg-desktop.jpg);
+		background-size: auto;
 		padding: 130px 225px;
-		background-image: url(../../../images/mishka-bg-desktop.jpg);
+		width: 1050px;
+		margin:0 auto;
+	}
+	.title__wrapper{
+		background-color: @light-grey;
 	}
 }
 }

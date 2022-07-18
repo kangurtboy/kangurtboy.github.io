@@ -870,10 +870,12 @@
   min-height: 285px;
   display: block;
   text-align: center;
-  background-image: url(../../../images/mishka-bg-mobile.jpg);
-  background-size: cover;
+  padding: 0 30px;
+  background-image: url(../../images/mishka-bg-mobile.jpg);
+  background-color: #f8f8f8;
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center ;
   padding-top: 75px;
 }
 @media (min-width: 768px) {
@@ -881,15 +883,21 @@
     font-size: 43px;
     line-height: 50px;
     padding: 120px 80px ;
-    background-image: url(../../../images/mishka-bg-tablet.jpg);
+    background-image: url(../../images/mishka-bg-tablet.jpg);
     background-size: contain;
     min-height: 746px;
   }
 }
 @media (min-width: 1050px) {
   .page-main__title {
+    background-image: url(../../images/mishka-bg-desktop.jpg);
+    background-size: auto;
     padding: 130px 225px;
-    background-image: url(../../../images/mishka-bg-desktop.jpg);
+    width: 1050px;
+    margin: 0 auto;
+  }
+  .page-main .title__wrapper {
+    background-color: #f8f8f8;
   }
 }
 .product-week {
