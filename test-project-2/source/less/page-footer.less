@@ -1,19 +1,20 @@
 .page-footer {
+	&__wrapper{
+		padding: 0 30px;
+		background-color: #f1f1f1;
+	}
 	&__social-list {
 		.list-reset();
 		display: flex;
 		justify-content: space-around;
 		border-bottom: 1px solid #e5e5e5;
 		padding: 30px 0;
-		background-color: #f1f1f1;
-		path{
-			cursor: pointer;
-			&:hover{
-				fill: #63d1bb;
-			}
-		}
-		
-
+	}
+	.social-list__item{
+		cursor: pointer;
+		&:hover path{
+			fill: #63d1bb;
+		}	
 	}
 
 	&__logo {
@@ -42,12 +43,13 @@
 
 @media(min-width:@tablet-width) {
 	.page-footer {
-		padding: 30px 50px;
 		background-color: #f1f1f1;
 		width: 100%;
-		display: flex;
-		justify-content: space-between;
-
+		&__wrapper{
+			padding: 30px 50px;
+			display: flex;
+			justify-content: space-between;
+		}
 		&__logo {
 			display: block;
 			margin-top: 25px;
@@ -61,9 +63,17 @@
 
 	.social-list {
 		border: none;
-
 		&__item {
 			margin-right: 40px;
+		}
+	}
+}
+
+@media (min-width: @desktop-width){
+	.page-footer{
+		&__wrapper{
+			width: @desktop-width;
+			margin: 0 auto;
 		}
 	}
 }
