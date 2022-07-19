@@ -41,20 +41,15 @@
 	}
 	&__buttons{
 		display: flex;
-	margin-bottom: 40px;
+		margin-bottom: 40px;
 	}
 
 	&__button-prev {
 		border: 1px solid #ececec;
 		padding: 15px 40px;
 		flex-grow: 1;
-
-	
-	
 		cursor: pointer;
 		background: transparent;
-
-
 	}
 
 	&__button-next {
@@ -63,7 +58,6 @@
 		cursor: pointer;
 		background: transparent;
 		flex-grow: 1;
-
 	}
 
 	&__write {
@@ -76,15 +70,21 @@
 
 @media(min-width:@tablet-width) {
 	.reviews {
-		width: 768px;
+		&::before{
+			bottom: -110px;
+		}
 		display: flex;
 		padding-top: 80px;
 		padding-bottom: 50px;
-		background-image: url(../../../images/reviews-bg.jpg);
+		background-image: url(../../images/reviews-bg.jpg);
 		background-size: contain;
 		background-repeat: no-repeat;
-		margin-bottom: 80px;
-
+		margin-bottom: 160px;
+		&__wrapper{
+			padding: 0 50px;
+			width: @tablet-width;
+			margin : 0 auto;
+		}
 		&__title {
 			font-size: 43px;
 			margin-bottom: 70px;
@@ -96,9 +96,11 @@
 
 		&__write {
 			margin-bottom: auto;
-			margin-top: 27px;
-			margin-right: 23px;
-			margin-left: -173px;
+			margin-top: 0;
+			margin-right: 0;
+			position: absolute;
+			right: 50px;
+			top: 10px;
 		}
 		&__button-wrapper{
 			display: flex;
@@ -109,7 +111,6 @@
 			width: 175px;
 			margin-right: 0px;
 			margin-top: 0px;
-
 		}
 		&__author-wrapper{
 			width: 350px;
