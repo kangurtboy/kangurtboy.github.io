@@ -44,6 +44,7 @@
 @media (min-width: 1050px) {
   .about-us__wrapper {
     width: 1050px;
+    padding-left: 175px;
   }
   .about-us__title {
     font-size: 53px;
@@ -52,7 +53,6 @@
     margin: 0 auto;
   }
   .about-us__item {
-    margin-right: 140px;
     margin-bottom: 60px;
   }
 }
@@ -1075,11 +1075,11 @@
   }
   .product-week__name {
     font-size: 53px;
-    margin-left: 78px;
+    margin-left: 38px;
     padding-left: 0;
   }
   .product-week__title {
-    margin-left: 0;
+    margin-left: 40px;
     padding-top: 0;
   }
   .product-week__picture {
