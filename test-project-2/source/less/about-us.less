@@ -1,4 +1,7 @@
 .about-us {
+	padding: 0 30px;
+	margin-bottom: 70px;
+
 	&__title {
 		font-size: 25px;
 		margin-bottom: 30px;
@@ -12,6 +15,8 @@
 		font-size: 17px;
 		margin-bottom: 40px;
 		font-weight: bold;
+		width:300px;
+		margin-bottom: 45px;
 
 		img {
 			display: block;
@@ -22,18 +27,17 @@
 
 @media(min-width:@tablet-width) {
 	.about-us {
-	
-
+		padding: 0 50px;
+		&__wrapper{
+			width: @tablet-width;
+			margin: 0 auto;
+		}
 		&__list {
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: space-between;
 		}
-
-		&__item {
-			width: 48%
-		}
-	margin-bottom: 90px;
+		margin-bottom: 90px;
 	}
 	.about-us__title {
 		font-size: 43px;
@@ -43,9 +47,9 @@
 
 @media(min-width:@desktop-width) {
 	.about-us {
-		margin: 0 auto;
-		padding-left: 175px;
-
+		&__wrapper{
+			width: @desktop-width;
+		}
 		&__title {
 			font-size: 53px;
 		}
@@ -53,9 +57,9 @@
 		&__list {
 			margin: 0 auto;
 		}
-
-		&__item {
-			width: 50%;
+		&__item{
+			margin-right: 140px;
+			margin-bottom: 60px;
 		}
 	}
 }

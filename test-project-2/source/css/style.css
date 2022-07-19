@@ -1,3 +1,7 @@
+.about-us {
+  padding: 0 30px;
+  margin-bottom: 70px;
+}
 .about-us__title {
   font-size: 25px;
   margin-bottom: 30px;
@@ -11,6 +15,8 @@
   font-size: 17px;
   margin-bottom: 40px;
   font-weight: bold;
+  width: 300px;
+  margin-bottom: 45px;
 }
 .about-us__item img {
   display: block;
@@ -18,15 +24,17 @@
 }
 @media (min-width: 668px) {
   .about-us {
+    padding: 0 50px;
     margin-bottom: 90px;
+  }
+  .about-us__wrapper {
+    width: 668px;
+    margin: 0 auto;
   }
   .about-us__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-  }
-  .about-us__item {
-    width: 48%;
   }
   .about-us__title {
     font-size: 43px;
@@ -34,9 +42,8 @@
   }
 }
 @media (min-width: 1050px) {
-  .about-us {
-    margin: 0 auto;
-    padding-left: 175px;
+  .about-us__wrapper {
+    width: 1050px;
   }
   .about-us__title {
     font-size: 53px;
@@ -45,7 +52,8 @@
     margin: 0 auto;
   }
   .about-us__item {
-    width: 50%;
+    margin-right: 140px;
+    margin-bottom: 60px;
   }
 }
 .catalog-video {
@@ -434,6 +442,7 @@
   .feature {
     position: relative;
     top: -102px;
+    margin-bottom: 0;
   }
   .feature::before {
     content: '';
@@ -930,8 +939,8 @@
 }
 .product-week {
   padding: 0 30px;
+  margin-bottom: 100px;
   position: relative;
-  margin-bottom: 130px;
 }
 .product-week::before {
   content: '';
@@ -999,7 +1008,7 @@
     margin: 0 auto;
     padding: 0;
     padding-bottom: 55px;
-    margin-bottom: 65px;
+    margin-bottom: 85px;
   }
   .product-week::before {
     bottom: -40px;
