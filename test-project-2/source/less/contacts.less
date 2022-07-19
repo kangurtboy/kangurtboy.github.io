@@ -1,14 +1,15 @@
 .contacts {
-	&__title {
+	margin-bottom: 65px;
+	&__wrapper{
+		padding: 0 30px;
 	}
-
 	&__list {
 		.list-reset();
+		margin-bottom: 40px;
 	}
 
 	&__item {
 		display: flex;
-
 		.contacts__type {
 			margin: 0;
 			padding: 0;
@@ -34,9 +35,12 @@
 		display: block;
 		border: 2px solid #444444;
 		text-align: center;
+		margin: 0 30px;
 	}
-
-	margin-bottom: 65px;
+	&__map{
+		width: 100%;
+		margin-bottom: 40px;
+	}
 }
 
 @media(min-width: @tablet-width) {
@@ -45,13 +49,13 @@
 			content: "" ;
 			display: block;
 			position: absolute;
-				width: 60px;
-				height: 90px;
-				background-image: url(../../../images/svg/flag.png);
-				background-size: contain;
-				background-repeat: no-repeat;
-				right: 0;
-				top: -60px;
+			width: 60px;
+			height: 90px;
+			background-image: url(../../../images/svg/flag.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+			right: 0;
+			top: -60px;
 		}
 		position: relative;
 		&__title {

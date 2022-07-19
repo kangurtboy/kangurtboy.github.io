@@ -290,10 +290,14 @@
 .contacts {
   margin-bottom: 65px;
 }
+.contacts__wrapper {
+  padding: 0 30px;
+}
 .contacts__list {
   list-style: none;
   margin: 0;
   padding: 0;
+  margin-bottom: 40px;
 }
 .contacts__item {
   display: flex;
@@ -319,6 +323,11 @@
   display: block;
   border: 2px solid #444444;
   text-align: center;
+  margin: 0 30px;
+}
+.contacts__map {
+  width: 100%;
+  margin-bottom: 40px;
 }
 @media (min-width: 668px) {
   .contacts {
