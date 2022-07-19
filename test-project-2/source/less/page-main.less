@@ -27,7 +27,11 @@
 			background-size: contain;
 			min-height: 746px;
 		}
+		.title__wrapper{
+			background-color: @light-grey;
+		}
 	}
+	
 }
 
 @media(min-width: @desktop-width){
@@ -36,11 +40,8 @@
 		background-image: url(../../images/mishka-bg-desktop.jpg);
 		background-size: auto;
 		padding: 130px 225px;
-		width: 1050px;
+		width: @desktop-width;
 		margin:0 auto;
-	}
-	.title__wrapper{
-		background-color: @light-grey;
 	}
 }
 }
