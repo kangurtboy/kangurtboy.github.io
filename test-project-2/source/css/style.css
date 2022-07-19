@@ -1109,10 +1109,24 @@
   }
 }
 .reviews {
-  margin-bottom: 40px;
+  padding-bottom: 100px;
+  position: relative;
+}
+.reviews::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  width: 100%;
+  height: 30px;
+  background-image: url(../../images/zigzag-separator.svg);
+  background-repeat: no-repeat;
 }
 .reviews__title {
   font-size: 25px;
+}
+.reviews__wrapper {
+  padding: 0 30px;
 }
 .reviews__text {
   color: #444444;
@@ -1124,6 +1138,7 @@
   font-size: 17px;
   font-style: normal;
   display: block;
+  font-weight: 700;
 }
 .reviews__author__contact {
   color: #444444;
