@@ -16,7 +16,7 @@
   display: block;
   margin-bottom: 25px;
 }
-@media (min-width: 768px) {
+@media (min-width: 668px) {
   .about-us {
     margin-bottom: 90px;
   }
@@ -104,7 +104,7 @@
   text-transform: uppercase;
   font-weight: bold;
 }
-@media (min-width: 768px) {
+@media (min-width: 668px) {
   .catalog-video {
     display: flex;
     flex-direction: column;
@@ -231,7 +231,7 @@
   text-align: center;
   margin-top: -1px;
 }
-@media (min-width: 768px) {
+@media (min-width: 668px) {
   .catalog__item {
     display: flex;
     width: 668px;
@@ -312,7 +312,7 @@
   border: 2px solid #444444;
   text-align: center;
 }
-@media (min-width: 768px) {
+@media (min-width: 668px) {
   .contacts {
     position: relative;
   }
@@ -430,7 +430,7 @@
 .feature__item--darker-blue {
   background-color: #56c3b2;
 }
-@media (min-width: 768px) {
+@media (min-width: 668px) {
   .feature {
     position: relative;
     top: -102px;
@@ -438,7 +438,7 @@
   .feature::before {
     content: '';
     position: absolute;
-    bottom: -15px;
+    bottom: -53px;
     left: 0;
     width: 100%;
     height: 30px;
@@ -446,9 +446,11 @@
     background-repeat: no-repeat;
   }
   .feature__wrapper {
-    width: 768px;
+    width: 668px;
+    padding: 0;
+    display: flex;
     margin: 0 auto;
-    padding: 0 50px;
+    justify-content: center;
   }
   .feature__list {
     display: flex;
@@ -461,6 +463,9 @@
 @media (min-width: 1050px) {
   .feature::before {
     background-position: center;
+    bottom: -57px;
+    padding: 0;
+    background-repeat: repeat;
   }
   .feature__wrapper {
     width: 1050px;
@@ -559,7 +564,7 @@
 .main-nav--nojs .user-list {
   display: block;
 }
-@media (min-width: 768px) {
+@media (min-width: 668px) {
   .main-nav--closed .main-nav__toggler,
   .main-nav--opened .main-nav__toggler {
     display: none;
@@ -587,10 +592,10 @@
     display: block;
     font-size: 15px;
     font-weight: normal;
-    padding: 15px 35px;
     order: 1;
     margin-bottom: -60px;
     padding: 0;
+    margin-right: 50px;
   }
   .main-nav__logo-link {
     margin-left: 50px;
@@ -609,7 +614,7 @@
   }
   .main-nav__delivery {
     display: block;
-    padding-top: 25px;
+    padding-top: 10px;
   }
   .main-nav__offer-list {
     margin-bottom: -60px;
@@ -712,7 +717,7 @@
   height: 50px;
   border: 2px solid #63d1bb;
 }
-@media (min-width: 768px) {
+@media (min-width: 668px) {
   .modal-basket {
     width: 568px;
     margin: 0 auto;
@@ -776,7 +781,7 @@
   padding: 31px 0;
   margin: 0;
 }
-@media (min-width: 768px) {
+@media (min-width: 668px) {
   .page-footer {
     padding: 30px 50px;
     background-color: #f1f1f1;
@@ -815,7 +820,7 @@
   line-height: 24px;
   margin-bottom: 30px;
 }
-@media (min-width: 768px) {
+@media (min-width: 668px) {
   .page-form__title {
     font-size: 43px;
     padding: 100px 150px;
@@ -850,7 +855,7 @@
 .offer-list {
   display: none;
 }
-@media (min-width: 768px) {
+@media (min-width: 668px) {
   .page-header {
     width: 100%;
     flex-direction: row;
@@ -862,7 +867,7 @@
     margin-right: 210px;
   }
 }
-@media (min-width: 768px) and (min-width: 1050px) {
+@media (min-width: 668px) and (min-width: 1050px) {
   .main-nav {
     width: 1150px;
   }
@@ -901,7 +906,7 @@
   background-position: center ;
   padding-top: 75px;
 }
-@media (min-width: 768px) {
+@media (min-width: 668px) {
   .page-main__title {
     font-size: 43px;
     line-height: 50px;
@@ -909,6 +914,9 @@
     background-image: url(../../images/mishka-bg-tablet.jpg);
     background-size: contain;
     min-height: 746px;
+  }
+  .page-main .title__wrapper {
+    background-color: #f8f8f8;
   }
 }
 @media (min-width: 1050px) {
@@ -918,9 +926,6 @@
     padding: 130px 225px;
     width: 1050px;
     margin: 0 auto;
-  }
-  .page-main .title__wrapper {
-    background-color: #f8f8f8;
   }
 }
 .product-week {
@@ -958,9 +963,10 @@
   margin: 0 auto;
 }
 .product-week__price {
-  font-size: 17px;
   font-weight: bold;
   color: #444444;
+  font-size: 17px;
+  text-align: center;
 }
 .product-week__order {
   font-weight: bold;
@@ -984,19 +990,14 @@
 .product-week .product-table tr {
   border-bottom: 1px solid #e7e7e7;
 }
-.product-week__price {
-  color: #444444;
-  font-size: 17px;
-  text-align: center;
-}
 .product-week .button {
   font-size: 17px;
 }
-@media (min-width: 768px) {
+@media (min-width: 668px) {
   .product-week {
-    width: 768px;
+    width: 668px;
     margin: 0 auto;
-    padding: 0 50px;
+    padding: 0;
     padding-bottom: 55px;
     margin-bottom: 65px;
   }
@@ -1022,7 +1023,7 @@
     text-align: center;
   }
   .product-week__description {
-    width: 285px;
+    width: 293px;
   }
   .product-week .product-column {
     display: flex;
@@ -1055,21 +1056,22 @@
 }
 @media (min-width: 1050px) {
   .product-week {
-    padding-left: 175px;
-    margin-bottom: 60px;
+    width: 1050px;
   }
   .product-week__wrapper {
     flex-direction: row-reverse;
     justify-content: flex-end;
+    align-items: center;
     z-index: 2;
   }
   .product-week__name {
     font-size: 53px;
-    margin-left: 60px;
-    padding-left: 40px;
+    margin-left: 78px;
+    padding-left: 0;
   }
   .product-week__title {
-    margin-left: -120px;
+    margin-left: 0;
+    padding-top: 0;
   }
   .product-week__picture {
     margin-top: -210px;
@@ -1081,17 +1083,20 @@
     height: 636px;
   }
   .product-week__description {
-    margin-left: 60px;
+    margin-left: 175px;
+    padding-right: 30px;
   }
   .product-week__table {
-    margin-left: 60px;
+    margin-left: 175px;
+    margin-right: 60px !important;
   }
   .product-week__price {
-    margin-top: -110px;
-    margin-left: 60px;
+    margin-top: -120px;
+    margin-left: 275px;
   }
   .product-week__order {
-    margin-left: 60px;
+    margin-left: 175px;
+    margin-top: 35px;
   }
 }
 .reviews {
@@ -1140,7 +1145,7 @@
   text-transform: uppercase;
   display: block;
 }
-@media (min-width: 768px) {
+@media (min-width: 668px) {
   .reviews {
     width: 768px;
     display: flex;
@@ -1390,7 +1395,7 @@
   top: 5px;
   right: 0;
 }
-@media (min-width: 768px) {
+@media (min-width: 668px) {
   .form__wrapper {
     display: flex;
     background-color: #f4f4f4;
@@ -1549,7 +1554,7 @@
 .site-list__item:hover {
   opacity: 0.5;
 }
-@media (min-width: 768px) {
+@media (min-width: 668px) {
   .site-list {
     display: flex;
     flex-wrap: wrap;
@@ -1615,7 +1620,7 @@
 .user-list__icon path:hover {
   fill: #6dd4bf;
 }
-@media (min-width: 768px) {
+@media (min-width: 668px) {
   .user-list {
     display: flex;
     flex-wrap: wrap;

@@ -35,7 +35,9 @@
 	&__price{
 		font-size: 17px;
 		font-weight: bold;
-		color: #444444;
+		color: @main-color;
+		font-size: 17px;
+		text-align: center;
 	}
 	&__order{
 		font-weight: bold;
@@ -62,12 +64,6 @@
 		}
 	}
 
-	&__price {
-		color: @main-color;
-		font-size: 17px;
-		text-align: center;
-	}
-
 	.button {
 		font-size: 17px;
 	}
@@ -82,7 +78,7 @@
 		}
 		width: @tablet-width;
 		margin: 0 auto;
-		padding: 0 50px;
+		padding: 0;
 		padding-bottom: 55px;
 		margin-bottom: 65px;
 		&__name {
@@ -93,6 +89,8 @@
 			display: flex;
 			flex-direction: row;
 			justify-content: space-between;
+		}
+		&__container{
 		}
 		&__image{
 			width: 333px;
@@ -107,7 +105,7 @@
 		}
 
 		&__description {
-			width: 285px;
+			width: 293px;
 		}
 
 		.product-column {
@@ -143,22 +141,22 @@
 
 @media(min-width: @desktop-width) {
 	.product-week {
-		padding-left: 175px;
-		margin-bottom: 60px;
-		
+		width: @desktop-width;
 		&__wrapper {
 			flex-direction: row-reverse;
 			justify-content: flex-end;
+			align-items: center;
 			z-index: 2;
 		}
 
 		&__name {
 			font-size: 53px;
-			margin-left: 60px;
-			padding-left: 40px;
+			margin-left: 78px;
+			padding-left: 0;
 		}
 		&__title{
-			margin-left: -120px;
+			margin-left: 0;
+			padding-top: 0;
 		}
 		&__picture{
 			margin-top: -210px;
@@ -169,25 +167,23 @@
 		&__image{
 			width: 525px;
 			height: 636px;
-
 		}
 		&__description{
-			margin-left: 60px;
+			margin-left: 175px;
+			padding-right: 30px;
 		}
 		&__table{
-			margin-left: 60px;
-
+			margin-left: 175px;
+			margin-right: 60px !important;
 		}
 		&__price{
-			margin-top: -110px;
-			margin-left: 60px;
+			margin-top: -120px;
+			margin-left: 275px;
 		}
 		&__order{
-			margin-left: 60px;
-
+			margin-left: 175px;
+			margin-top: 35px;
 		}
 		
-
-
 	}
 }
