@@ -339,14 +339,15 @@
     position: absolute;
     width: 60px;
     height: 90px;
-    background-image: url(../../../images/svg/flag.png);
+    background-image: url(../../../images/flag.png);
     background-size: contain;
     background-repeat: no-repeat;
-    right: 0;
-    top: -60px;
+    right: 50px;
+    top: -40px;
   }
   .contacts__title {
     font-size: 43px;
+    margin-bottom: 70px;
   }
   .contacts__list {
     display: flex;
@@ -381,9 +382,10 @@
     margin: 0 auto;
     margin-bottom: 100px;
     padding-left: 175px;
+    padding-right: 50px;
   }
   .contacts::after {
-    left: 0;
+    left: 100px;
     top: 10px;
   }
   .contacts__title {
@@ -391,9 +393,12 @@
   }
   .contacts__write-us {
     margin: 0;
-    margin-right: 100%;
     flex-shrink: 0;
     margin-top: -55px;
+    width: 290px;
+    padding: 15px 0px !important;
+    display: flex;
+    justify-content: center;
   }
   .contacts__list {
     display: initial;

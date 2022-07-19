@@ -51,15 +51,16 @@
 			position: absolute;
 			width: 60px;
 			height: 90px;
-			background-image: url(../../../images/svg/flag.png);
+			background-image: url(../../../images/flag.png);
 			background-size: contain;
 			background-repeat: no-repeat;
-			right: 0;
-			top: -60px;
+			right: 50px;
+			top: -40px;
 		}
 		position: relative;
 		&__title {
 			font-size: 43px;
+			margin-bottom: 70px;
 		}
 
 		&__list {
@@ -94,7 +95,7 @@
 @media(min-width: @desktop-width) {
 	.contacts {
 		&::after{
-			left: 0;
+			left: 100px;
 			top: 10px;
 		}
 		width: 1150px;
@@ -104,6 +105,7 @@
 		margin: 0 auto;
 		margin-bottom: 100px;
 		padding-left: 175px;
+		padding-right: 50px;
 
 		&__title {
 			font-size: 53px;
@@ -111,12 +113,13 @@
 
 		&__write-us {
 			margin: 0;
-			margin-right: 100%;
 			flex-shrink: 0;
 			margin-top: -55px;
+			width: 290px;
+			padding: 15px 0px !important;
+			display: flex;
+			justify-content: center;
 		}
-		
-
 
 		&__list {
 			display: initial;
