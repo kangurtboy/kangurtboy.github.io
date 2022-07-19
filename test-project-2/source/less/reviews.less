@@ -118,24 +118,31 @@
 		}
 		&__button-prev {
 			border: none;
-
 		}
 	
 		&__button-next {
 			border: none;
 		}
-	
-
 	}
 }
 
 @media(min-width:@desktop-width) {
 	.reviews {
-		width: 1150px;
-		padding-left: 175px;
+		width: @desktop-width;
+		display: flex;
+		margin-left : auto;
+		margin-right: auto;
 		&__title {
 			font-size: 53px;
 		}
-
+		&__wrapper{
+			margin-left: 175px;
+			padding: 0;
+		}
+		&__buttons{
+			position: absolute;
+			right: 135px;
+			bottom: 0;
+		}
 	}
 }

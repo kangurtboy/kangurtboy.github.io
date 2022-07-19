@@ -1226,11 +1226,22 @@
 }
 @media (min-width: 1050px) {
   .reviews {
-    width: 1150px;
-    padding-left: 175px;
+    width: 1050px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
   }
   .reviews__title {
     font-size: 53px;
+  }
+  .reviews__wrapper {
+    margin-left: 175px;
+    padding: 0;
+  }
+  .reviews__buttons {
+    position: absolute;
+    right: 135px;
+    bottom: 0;
   }
 }
 .input-list {
