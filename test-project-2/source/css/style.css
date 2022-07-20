@@ -70,7 +70,8 @@
   width: 101px;
   height: 77px;
   cursor: pointer;
-  background-image: url(../../../images/svg/play.svg);
+  background-image: url(../../images/play.svg);
+  background-size: contain;
   left: 80px;
   top: 145px;
 }
@@ -92,8 +93,9 @@
   position: absolute;
   width: 43px;
   height: 30px;
-  left: 0;
-  background-image: url(../../../images/svg/video-icon.png);
+  left: -10px;
+  top: 13px;
+  background-image: url(../../images/video-icon.png);
   background-repeat: no-repeat;
 }
 .catalog-video__description {
@@ -101,9 +103,9 @@
   text-align: center;
 }
 .catalog-video__button {
-  display: block;
-  text-align: center;
-  padding: 17px 20px;
+  display: flex;
+  justify-content: center;
+  padding: 17px 0 !important;
   margin-bottom: 35px;
   margin-right: 35px;
   margin-left: 35px;
