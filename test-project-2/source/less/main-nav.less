@@ -159,7 +159,8 @@
 
 @media (min-width: @desktop-width) {
 	.main-nav {
-		width: 1150px;
+		width: @desktop-width;
+		padding: 0 50px;
 		&__wrapper {
 			flex-direction: row;
 			flex-wrap: wrap;
@@ -175,7 +176,8 @@
 			
 		}
 		&__logo-link{
-			margin: 0 auto;
+			margin: 0;
+			margin-left: -50px;
 			display:flex;
 			align-items: center;
 			img{
