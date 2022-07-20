@@ -46,7 +46,6 @@
 			justify-content: space-between;
 		}
 
-
 		&__add {
 			border: none;
 			background: transparent;
@@ -60,8 +59,6 @@
 				cursor: pointer;
 			}
 		}
-
-
 	}
 
 }
@@ -71,7 +68,7 @@
 	padding: 63px 17px;
 	text-align: center;
 	margin-top: -1px;
-
+	background-color: #f1f1f1;
 }
 
 @media(min-width: @tablet-width) {
@@ -128,7 +125,11 @@
 
 @media(min-width: @desktop-width) {
 	.catalog {
-		width: 1050px;
+		width: @desktop-width;
+		position: initial;
+		&::before{
+			top: 280px;
+		}
 		margin: 0 auto;
 		&__list {
 			display: flex;
@@ -136,17 +137,22 @@
 		}
 
 		&__item {
-			display: initial;
 			width: 318px;
 			padding-bottom: 0;
-
-			&__info {
-				margin-bottom: 2.8%;
+			display: block;
+			position: relative;
+			margin-left: 0;
+			&:last-child{
+				margin-right: 0;
 			}
 
 			&__button {
-				display: block;
-				margin-top: 75px;
+				position: absolute;
+				bottom: 0;
+			}
+			&__info{
+				margin-bottom: 50px;
+				padding-bottom: 50px;
 			}
 		}
 	}
