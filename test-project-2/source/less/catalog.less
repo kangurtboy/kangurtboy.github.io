@@ -34,11 +34,11 @@
 		}
 
 		&__button {
-			border-top: 1px solid #ececec;
+			border-top: @main-border;
 			border-bottom: none;
 			margin-right: 25px;
 			margin-left: 25px;
-			padding: 30px;
+			padding: 25px 5px;
 			padding-bottom: 0;
 			font-size: 15px;
 			font-weight: bold;
@@ -76,24 +76,45 @@
 
 @media(min-width: @tablet-width) {
 	.catalog {
+		position: relative;
+	
+		&::before{
+			content: '';
+			position: absolute;
+			bottom: -53px;
+			left: 0;
+			top: -100px;
+			width: 100%;
+			height: 23px;
+			background-image: url(../../images/zigzag-fill.svg);
+			background-size: contain;
+			
+		}
 		&__item {
 			display: flex;
-			width: 668px;
-		
-
+			width: @tablet-width;
+			border: @main-border;
 			&__button{
-				display: block;
 				margin-bottom: 0;
 				padding-bottom: 0;
 				width: 274px;
+				margin-top: auto;
+				padding: 25px 0;
+				align-items: center;
 			}
-			&__image{
-				height: 100%;
+			&__other__wrapper{
+				display: flex;
+				flex-direction: column;
 			}
 
 			&__info {
-				margin-bottom: 166px;
 				font-size: 15px;
+			}
+			img{
+				height: 100%;
+			}
+			&__add{
+				margin: 0;
 			}
 		}
 	}
@@ -101,7 +122,7 @@
 	.page-catalog__title {
 		font-size: 43px;
 		padding: 100px 150px;
-
+		margin-bottom: 80px;
 	}
 }
 
@@ -126,10 +147,6 @@
 			&__button {
 				display: block;
 				margin-top: 75px;
-			}
-			&__image__wrapper{
-			
-
 			}
 		}
 	}
