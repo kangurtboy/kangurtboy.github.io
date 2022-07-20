@@ -31,7 +31,7 @@
 		font-size: 18px;
 		text-transform: uppercase;
 		font-weight: bold;
-		padding: 15px 50px;
+		padding: 15px 0 !important;
 		display: block;
 		border: 2px solid #444444;
 		text-align: center;
@@ -40,22 +40,33 @@
 	&__map{
 		width: 100%;
 		margin-bottom: 40px;
+		
+		iframe{
+			width: inherit;
+		}
 	}
 }
 
 @media(min-width: @tablet-width) {
 	.contacts {
+		width: 100%;
+		margin: 0 auto;
+		margin-bottom: 55px;
 		&::after{
 			content: "" ;
 			display: block;
 			position: absolute;
 			width: 60px;
 			height: 90px;
-			background-image: url(../../../images/flag.png);
+			background-image: url(../../images/flag.png);
 			background-size: contain;
 			background-repeat: no-repeat;
 			right: 50px;
 			top: -40px;
+		}
+		&__wrapper{
+			width: @tablet-width;
+			margin: 0 auto;
 		}
 		position: relative;
 		&__title {
@@ -82,9 +93,9 @@
 		&__write-us {
 			display: flex;
 			margin: 0 auto;
-			width: 340px;
-			text-align: center;
+			width: 230px;
 			padding: 15px 80px;
+			justify-content: center;
 		}
 		&__wrapper{
 			margin-bottom: 65px;
@@ -98,15 +109,16 @@
 			left: 100px;
 			top: 10px;
 		}
-		width: 1150px;
+		width:@desktop-width;
 		display: flex;
 		justify-content: space-between;
-		flex-wrap: wrap;
+		flex-wrap: nowrap;
 		margin: 0 auto;
 		margin-bottom: 100px;
 		padding-left: 175px;
-		padding-right: 50px;
-
+		&__wrapper{
+			width:350px;
+		}
 		&__title {
 			font-size: 53px;
 		}
@@ -119,6 +131,11 @@
 			padding: 15px 0px !important;
 			display: flex;
 			justify-content: center;
+			position: absolute;
+			bottom: 0;
+		}
+		&__wrapper{
+			width: @desktop-width;
 		}
 
 		&__list {
@@ -127,10 +144,10 @@
 		}
 
 		&__map {
-			width: 526px;
+			width: 525px;
 			height: 450px;
 			margin-bottom: 0;
 		}
-
 	}
+
 }
