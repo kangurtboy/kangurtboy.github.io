@@ -135,6 +135,9 @@
     font-size: 20px;
     order: 1;
   }
+  .catalog-video__title::before {
+    top: 0;
+  }
   .catalog-video__description {
     text-align: left;
     margin-left: 35px;
