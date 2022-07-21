@@ -6,46 +6,21 @@
 		font-size: 17px;
 		font-weight: bold;
 
-
-		input[type="text"] {
+		input[type="text"] , input[type="email"]  , input[type="tel"] , input[type="password"]{
 			border: none;
 			border-bottom: 2px solid #000000;
 			padding: 16px 0;
 			padding-right: 70px;
 			display: block;
 			width: 100%;
-
 			&::placeholder {
 				font-size: 17px;
 			}
-		}
-
-		input[type="email"] {
-			border: none;
-			border-bottom: 2px solid #000000;
-			padding: 16px 0;
-			padding-right: 70px;
-			display: block;
-			width: 100%;
-
-			&::placeholder {
-				font-size: 17px;
+			&:focus{
+				outline: none;
+				border-bottom: 2px solid @green;
 			}
 		}
-
-		input[type="tel"] {
-			border: none;
-			border-bottom: 2px solid #000000;
-			padding: 16px 0;
-			padding-right: 70px;
-			display: block;
-			width: 100%;
-
-			&::placeholder {
-				font-size: 17px;
-			}
-		}
-
 	}
 
 	textarea {
@@ -57,28 +32,25 @@
 		&::placeholder {
 			font-size: 17px;
 		}
+		&:focus{
+			outline: none;
+			border: 2px solid @green;
+		}
 	}
 }
 
 .form__submit-button {
-	padding: 20px 45px;
 	font-size: 17px;
-	color: #444444;
 	font-weight: bold;
-	border: 2px solid #444444;
 	margin-top: 30px;
 	margin-bottom: 55px;
-	display: block;
-
+	padding: 15px 0 !important;
+	width: 100%;
 }
-
-
-
-
 
 .form {
 	legend {
-		color: #63d1bb;
+		color: @green;
 		text-transform: uppercase;
 		font-weight: bold;
 		position: relative;
@@ -87,10 +59,10 @@
 		&::after {
 			content: "";
 			position: absolute;
-			height: 2px;
-			background-color: #63d1bb;
+			height: 1px;
+			background-color: @green;
 			width: 75%;
-			left: 63px;
+			left: 90px;
 			top: 50%;
 		}
 	}
@@ -139,7 +111,7 @@
 			height: 40px;
 			margin-left: 40px;
 			vertical-align: middle;
-			background-image: url(../../../images/svg/checked.svg);
+			background-image: url(../../images/checked.svg);
 			background-size: 70%;
 			background-position: center center;
 			background-repeat: no-repeat;
@@ -177,7 +149,7 @@
 
 			margin-left: 40px;
 			vertical-align: middle;
-			background-image: url(../../../images/svg/Shape.png);
+			background-image: url(../../images/Shape.png);
 			background-size: 50%;
 			background-position: center center;
 			background-repeat: no-repeat;
@@ -191,39 +163,38 @@
 
 	&__name-email {
 		top: 25px;
-
 	}
 }
 
 .input-phone{
 position: relative;
 	&::after{
-content: "" ;
-display: inline-block;
-position: absolute;
-width: 25px;
-height: 24px;
-background-image: url(../../../images/svg/phone.svg.png);
-background-repeat: no-repeat;
-background-size: 100%;
-top: 5px;
-right: 0;
+	content: "" ;
+	display: inline-block;
+	position: absolute;
+	width: 25px;
+	height: 24px;
+	background-image: url(../../images/phone.svg.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	top: 5px;
+	right: 10px;
 	}
 }
 
 .input-email{
 	position: relative;
 		&::after{
-	content: "" ;
-	display: inline-block;
-	position: absolute;
-	width: 32px;
-	height: 21px;
-	background-image: url(../../../images/svg/mail.svg.png);
-	background-repeat: no-repeat;
-	background-size: 100%;
-	top: 5px;
-	right: 0;
+		content: "" ;
+		display: inline-block;
+		position: absolute;
+		width: 32px;
+		height: 21px;
+		background-image: url(../../images/mail.svg.png);
+		background-repeat: no-repeat;
+		background-size: 100%;
+		top: 5px;
+		right: 10px;
 		}
 	}
 
