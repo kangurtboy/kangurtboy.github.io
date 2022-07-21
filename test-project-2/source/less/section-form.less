@@ -215,6 +215,9 @@ position: relative;
 
 		&__wrapper__name {
 			background-color: #fff;
+			width: @tablet-width;
+			margin: 0 auto;
+			padding-left: 0;
 		}
 
 		&__wrapper__other {
@@ -229,6 +232,11 @@ position: relative;
 		&__wrapper__phone {
 			background-color: #f1f1f1;
 			padding: 50px;
+		}
+
+		.phone__wrapper{
+			width: @tablet-width;
+			margin: 0 auto;
 		}
 
 		&__warnin-text {
@@ -248,7 +256,8 @@ position: relative;
 
 		&__radio-item {
 
-			margin-bottom: 20px;
+			margin: 0;
+			margin-bottom: 23px;
 		}
 
 		&__checkbox-list {
@@ -263,19 +272,26 @@ position: relative;
 		}
 
 		&__checkbox-item {
-			width: 50%
+			width: 50%;
+			margin-top: 0;
 		}
 
 		.input-list {
 			display: flex;
 			flex-direction: column;
 			width: 100%;
-
+			margin-left: -50px;
+			&__item{
+				display: flex;
+				align-items: center;
+				label{
+					margin-right: 20px;
+				}
+			}
 		}
 
 		&__item {
 			width: 100%;
-
 		}
 
 		&__name-surname {
@@ -295,9 +311,6 @@ position: relative;
 		}
 
 		.other-list {
-			margin-top: 50px;
-			width: 100%;
-
 			textarea {
 				width: 100%;
 			}
@@ -307,6 +320,18 @@ position: relative;
 			display: flex;
 			justify-content: space-between;
 			flex-direction: row-reverse;
+			width: @tablet-width;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.form__wrapper__other{
+			width: @tablet-width;
+			margin-left: auto;
+			margin-right: auto;
+			padding-left: 0;
+			padding-right: 0;
+
 		}
 
 		legend {

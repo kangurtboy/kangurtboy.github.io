@@ -23,14 +23,49 @@
 @media(min-width: @tablet-width){
 	.page-form{
 		&__title{
+			position: relative;
+			&::before{
+				content: '';
+				position: absolute;
+				bottom: -53px;
+				left: 0;
+				bottom: 0;
+				width: 100%;
+				height: 23px;
+				background-image: url(../../images/zigzag-fill.svg);
+				background-size: contain;
+			}
 			font-size: 43px;
-			padding: 100px 150px;
+			padding: 100px 150px;	
 		}
 	}
 	.form{
 		&__description{
 			font-size: 17px;
 			margin-top: 90px;
+			width: @tablet-width;
+			margin-right: auto;
+			margin-left: auto;
+		}
+		&__container{
+			margin: 0 auto;
+			padding: 0;
+		}
+		&__wrapper__type{
+			width: @tablet-width;
+			margin: 0 auto;
+			padding-left: 0 !important;
+		}
+		&__submit-button{
+			width: 230px !important;
+			background-color: transparent;
+		}
+	}
+	.color{
+		&__wrapper{
+			width: @tablet-width;
+			margin: 0 auto;
+			display: flex;
 		}
 	}
 }

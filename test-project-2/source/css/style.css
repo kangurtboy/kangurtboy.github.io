@@ -916,12 +916,45 @@
 }
 @media (min-width: 668px) {
   .page-form__title {
+    position: relative;
     font-size: 43px;
     padding: 100px 150px;
+  }
+  .page-form__title::before {
+    content: '';
+    position: absolute;
+    bottom: -53px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 23px;
+    background-image: url(../../images/zigzag-fill.svg);
+    background-size: contain;
   }
   .form__description {
     font-size: 17px;
     margin-top: 90px;
+    width: 668px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .form__container {
+    margin: 0 auto;
+    padding: 0;
+  }
+  .form__wrapper__type {
+    width: 668px;
+    margin: 0 auto;
+    padding-left: 0 !important;
+  }
+  .form__submit-button {
+    width: 230px !important;
+    background-color: transparent;
+  }
+  .color__wrapper {
+    width: 668px;
+    margin: 0 auto;
+    display: flex;
   }
 }
 @media (min-width: 1050px) {
@@ -1528,6 +1561,9 @@
   }
   .form__wrapper__name {
     background-color: #fff;
+    width: 668px;
+    margin: 0 auto;
+    padding-left: 0;
   }
   .form__wrapper__other {
     background-color: #fff;
@@ -1539,6 +1575,10 @@
   .form__wrapper__phone {
     background-color: #f1f1f1;
     padding: 50px;
+  }
+  .form .phone__wrapper {
+    width: 668px;
+    margin: 0 auto;
   }
   .form__warnin-text {
     margin-top: 50px;
@@ -1553,7 +1593,8 @@
     margin-right: auto;
   }
   .form__radio-item {
-    margin-bottom: 20px;
+    margin: 0;
+    margin-bottom: 23px;
   }
   .form__checkbox-list {
     display: flex;
@@ -1566,11 +1607,20 @@
   }
   .form__checkbox-item {
     width: 50%;
+    margin-top: 0;
   }
   .form .input-list {
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin-left: -50px;
+  }
+  .form .input-list__item {
+    display: flex;
+    align-items: center;
+  }
+  .form .input-list__item label {
+    margin-right: 20px;
   }
   .form__item {
     width: 100%;
@@ -1587,10 +1637,6 @@
   .form__name-other {
     width: 50%;
   }
-  .form .other-list {
-    margin-top: 50px;
-    width: 100%;
-  }
   .form .other-list textarea {
     width: 100%;
   }
@@ -1598,6 +1644,16 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
+    width: 668px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .form .form__wrapper__other {
+    width: 668px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
   }
   .form legend::after {
     display: none;
