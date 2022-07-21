@@ -1152,7 +1152,6 @@
     display: flex;
     flex-wrap: wrap;
     margin-right: auto;
-    background-color: #f1f1f1;
   }
   .form__name-colors {
     width: 50%;
