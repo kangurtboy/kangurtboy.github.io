@@ -906,13 +906,28 @@
   margin-top: -1px;
   background-color: #f1f1f1;
 }
-.form {
-  margin: 0 10px;
-}
 .form__description {
   font-size: 13px;
   line-height: 24px;
   margin-bottom: 30px;
+  padding: 0 30px;
+}
+.form__wrapper {
+  padding: 0 30px;
+}
+.form .warning-text-wrapper {
+  padding: 0 30px;
+}
+.form input[type="text"] {
+  width: 10px !important;
+  transition: 1s;
+  position: relative;
+  border-bottom: 2px solid transparent !important;
+}
+.form input[type="text"]:focus {
+  outline: none;
+  border-bottom: 2px solid red !important;
+  width: 100% !important;
 }
 @media (min-width: 668px) {
   .page-form__title {
