@@ -1304,15 +1304,19 @@
   }
   .form__wrapper__name {
     width: 1050px;
+    padding-right: 175px;
   }
   .form .phone__wrapper {
     width: 1050px;
+    padding-right: 175px;
   }
   .form .form__wrapper__other {
     width: 1050px;
+    padding-right: 175px;
   }
   .form .warning-text-wrapper {
     width: 1050px;
+    padding-right: 175px;
   }
   .form__warnin-text {
     margin-right: 0;
