@@ -70,3 +70,8 @@
     margin: 50px 0;
   }
 }
+
+.result_text {
+  font-size: large;
+  font-weight: 600;
+}
