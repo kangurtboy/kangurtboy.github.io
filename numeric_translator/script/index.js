@@ -60,3 +60,8 @@ const handleTranslate = () => {
 };
 
 translateButton.addEventListener('click', handleTranslate);
+inputEl.addEventListener('keydown', (evt) => {
+  if (evt.key === 'Enter') {
+    handleTranslate();
+  }
+});
