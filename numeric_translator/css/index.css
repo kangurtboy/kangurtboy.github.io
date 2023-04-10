@@ -14,8 +14,7 @@
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  background-color: palegreen;
-  padding: 5px;
+  padding: 25px;
   border-radius: 5px;
 }
 
@@ -74,4 +73,16 @@
 .result_text {
   font-size: large;
   font-weight: 600;
+}
+
+.footer h1 {
+  text-align: center;
+  font-weight: 100;
+  font-size: xx-large;
+  margin: 0;
+}
+
+.copyright__text {
+  background-color: palegreen;
+  padding: 5px;
 }
