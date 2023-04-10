@@ -40,7 +40,7 @@ const inputEl = document.querySelector('.text_input'),
   translateButton = document.querySelector('.translate_button'),
   resultEl = document.querySelector('.result_text');
 
-const handleTranslate = (evt) => {
+const handleTranslate = () => {
   const value = inputEl.value;
   const valueArr = value.split('');
   const result = [];
@@ -54,7 +54,8 @@ const handleTranslate = (evt) => {
       result.push(element);
     }
   });
-
+  inputEl.value = '';
+  inputEl.focus();
   resultEl.textContent = result.join('');
 };
 
